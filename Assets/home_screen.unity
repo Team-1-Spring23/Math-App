@@ -938,7 +938,6 @@ GameObject:
   - component: {fileID: 651178944}
   - component: {fileID: 651178943}
   - component: {fileID: 651178942}
-  - component: {fileID: 651178945}
   m_Layer: 5
   m_Name: Adding Puzzle
   m_TagString: Untagged
@@ -1011,7 +1010,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262870138}
+      - m_Target: {fileID: 1262870140}
         m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
         m_MethodName: puzzleButton
         m_Mode: 1
@@ -1061,18 +1060,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651178940}
   m_CullTransparentMesh: 1
---- !u!114 &651178945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651178940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0507bf29f116e194f8cc6b15a3d2d350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1038773979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1262870139}
-  - component: {fileID: 1262870138}
+  - component: {fileID: 1262870140}
   m_Layer: 0
   m_Name: puzzleController
   m_TagString: Untagged
@@ -1237,19 +1224,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1262870138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262870137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puzzle_scene: puzzle_scene
 --- !u!4 &1262870139
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,6 +1239,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1262870140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262870137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzle_scene: Random Addition
 --- !u!1 &1272890773
 GameObject:
   m_ObjectHideFlags: 0
