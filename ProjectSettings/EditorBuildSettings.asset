@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/store_page.unity
     guid: 8378228d5b2c447da8ed970f71a7d3fa
+  - enabled: 1
+    path: Assets/Random Addition.unity
+    guid: 6ce8afb50bae7df4082a3c217fc4d3a3
+  - enabled: 0
+    path: Assets/puzzle_scene.unity
+    guid: 015c9dd27dfb1d346bf310ff1072e326
   m_configObjects: {}
