@@ -7,9 +7,10 @@ public class Math_Addition : MonoBehaviour
 {
     public Text firstNumber;
     public Text secondNumber;
-    public Text answer1;
-    public Text answer2;
-    public Text answer3;
+
+    public Button answer1Button;
+    public Button answer2Button;
+    public Button answer3Button;
 
     public List<int> easyMathList = new List<int>();
 
@@ -19,13 +20,18 @@ public class Math_Addition : MonoBehaviour
     int answerOne;
     int answerTwo;
     int answerThree;
-    public int currentAnswer;
-    public Text rightorwrong;
+    public int correctAnswer;
+    public Text rightorwrong_Text;
 
-    private void Start()
+    public AudioSource correctAnswerAudio;
+    public AudioSource incorrectAnswerAudio;
+
+
+    public void Start()
     {
         DisplayMathProblem();
     }
+
     private (int, int) GetTwoRandomSum() // Return tuple of two random numbers that sum to something between 2 and 9
     {
         int firstNum = Random.Range(1, 9); // Random integer between 1 and 8
@@ -86,18 +92,62 @@ public class Math_Addition : MonoBehaviour
         // Update text of all items
         firstNumber.text = "" + randomFirstNumber;
         secondNumber.text = "" + randomSecondNumber;
-        answer1.text = "" + answerOne;
-        answer2.text = "" + answerTwo;
-        answer3.text = "" + answerThree;
+        answer1Button.GetComponentInChildren<Text>().text = "" + answerOne;
+        answer2Button.GetComponentInChildren<Text>().text = "" + answerTwo;
+        answer3Button.GetComponentInChildren<Text>().text = "" + answerThree;
 
         // Set which option is the correct answer (counting from 0)
-        currentAnswer = 0;
-        if (answerTwo == randomSum)
+        correctAnswer = randomSum;
+        // if (answerTwo == randomSum)
+        // {
+        //     correctAnswer = 1;
+        // } else if (answerThree == randomSum)
+        // {
+        //     correctAnswer = 2;
+        // }
+    }
+
+    public void ButtonAnswer1()
+    {
+        bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        showResults(isButton1Correct);
+    }
+    
+    public void ButtonAnswer2()
+    {
+        bool isButton2Correct = answer2Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        showResults(isButton2Correct);
+    }
+    
+    public void ButtonAnswer3()
+    {
+        bool isButton3Correct = answer3Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        showResults(isButton3Correct);
+    }
+
+    public void showResults(bool isCorrectAnswer) {
+        if (isCorrectAnswer)
         {
-            currentAnswer = 1;
-        } else if (answerThree == randomSum)
+            rightorwrong_Text.enabled = true;
+            rightorwrong_Text.color = Color.green;
+            rightorwrong_Text.text = ("Correct");
+            correctAnswerAudio.Play();
+
+            // Invoke("TurnOffText",1);
+        }
+        else
         {
-            currentAnswer = 2;
+            rightorwrong_Text.enabled = true;
+            rightorwrong_Text.color = Color.red;
+            rightorwrong_Text.text = ("Try again");
+            Invoke("TurnOffText",1);
+            incorrectAnswerAudio.Play();
+        }
+    }
+
+    private void TurnOffText() {
+        if (null !=  rightorwrong_Text) {
+            rightorwrong_Text.enabled = false;
         }
     }
 }
