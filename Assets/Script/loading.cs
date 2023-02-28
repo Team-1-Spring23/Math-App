@@ -9,7 +9,7 @@ public class loading : MonoBehaviour
     [SerializeField]
     public GameObject loadingPanel;
     public Slider loadingSlider;
-    public Text progressText;
+    // public Text progressText;
     public void Start(){
         StartCoroutine(LoadAsyncOperation(1));
     }  
@@ -25,7 +25,7 @@ public class loading : MonoBehaviour
             float progress = Mathf.Clamp01(gameLevel.progress / .9f);
             loadingSlider.value = progress;  
             
-            progressText.text = progress * 100 + "%";
+            // progressText.text = progress * 100 + "%";
 
             yield return null; 
         }
