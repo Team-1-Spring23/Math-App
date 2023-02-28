@@ -29,7 +29,14 @@ public class Math_Addition : MonoBehaviour
 
     public void Start()
     {
+        initializeUI();
         DisplayMathProblem();
+    }
+
+    public void initializeUI() {
+        if (null != rightorwrong_Text) {
+            rightorwrong_Text.enabled = false;
+        }
     }
 
     private (int, int) GetTwoRandomSum() // Return tuple of two random numbers that sum to something between 2 and 9
@@ -96,15 +103,7 @@ public class Math_Addition : MonoBehaviour
         answer2Button.GetComponentInChildren<Text>().text = "" + answerTwo;
         answer3Button.GetComponentInChildren<Text>().text = "" + answerThree;
 
-        // Set which option is the correct answer (counting from 0)
         correctAnswer = randomSum;
-        // if (answerTwo == randomSum)
-        // {
-        //     correctAnswer = 1;
-        // } else if (answerThree == randomSum)
-        // {
-        //     correctAnswer = 2;
-        // }
     }
 
     public void ButtonAnswer1()
@@ -143,6 +142,11 @@ public class Math_Addition : MonoBehaviour
             Invoke("TurnOffText",1);
             incorrectAnswerAudio.Play();
         }
+    }
+
+    public void refreshPuzzle() {
+        initializeUI();
+        DisplayMathProblem();
     }
 
     private void TurnOffText() {

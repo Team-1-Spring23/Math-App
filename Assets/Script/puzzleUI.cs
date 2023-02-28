@@ -16,7 +16,7 @@ public class puzzleUI : MonoBehaviour
     {
         
     }
-    [SerializeField]private string puzzle_scene ="Random Addition";
+    [SerializeField]private string puzzle_scene ="Random Add_Momo";
     
     public void puzzleButton(){
        
