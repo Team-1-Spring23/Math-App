@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 39874324}
   - component: {fileID: 39874323}
   - component: {fileID: 39874322}
-  - component: {fileID: 39874321}
   m_Layer: 5
   m_Name: Adding Fun
   m_TagString: Untagged
@@ -164,18 +163,6 @@ RectTransform:
   m_AnchoredPosition: {x: 115, y: 15}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &39874321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39874319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0507bf29f116e194f8cc6b15a3d2d350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &39874322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,10 +207,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 39874321}
-        m_TargetAssemblyTypeName: PrintMessageScript, Assembly-CSharp
-        m_MethodName: PrintMessage
-        m_Mode: 5
+      - m_Target: {fileID: 2037434232}
+        m_TargetAssemblyTypeName: AddingFun, Assembly-CSharp
+        m_MethodName: practiceButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -282,7 +269,6 @@ GameObject:
   - component: {fileID: 68876063}
   - component: {fileID: 68876062}
   - component: {fileID: 68876061}
-  - component: {fileID: 68876060}
   m_Layer: 5
   m_Name: Adding Quiz
   m_TagString: Untagged
@@ -311,18 +297,6 @@ RectTransform:
   m_AnchoredPosition: {x: 463, y: 104}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &68876060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68876058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0507bf29f116e194f8cc6b15a3d2d350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &68876061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,10 +341,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 68876060}
-        m_TargetAssemblyTypeName: PrintMessageScript, Assembly-CSharp
-        m_MethodName: PrintMessage
-        m_Mode: 5
+      - m_Target: {fileID: 487760866}
+        m_TargetAssemblyTypeName: AddingQuiz, Assembly-CSharp
+        m_MethodName: practiceButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -687,6 +661,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380921878}
   m_CullTransparentMesh: 1
+--- !u!1 &487760864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487760865}
+  - component: {fileID: 487760866}
+  m_Layer: 0
+  m_Name: QuizController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487760865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487760864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 280.76575, y: 99.23088, z: 12.001824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487760866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487760864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff28fa5797e9445408dd5354ca1783d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Adding_Quiz: Adding_Quiz
 --- !u!1 &622966501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 07f889dc7121aa6449615d56f22b6dee, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1980,3 +1999,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2037434230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037434231}
+  - component: {fileID: 2037434232}
+  m_Layer: 0
+  m_Name: FunController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2037434231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037434230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 280.76575, y: 99.23088, z: 12.001824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037434232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037434230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5125be59c9daef149963e0f052282a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Adding_Fun: Adding_Fun
