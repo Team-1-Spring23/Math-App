@@ -11,6 +11,8 @@ public class Math_Addition : MonoBehaviour
     public Button answer1Button;
     public Button answer2Button;
     public Button answer3Button;
+    public Button nextButton; // button to go to next problem
+    public GameObject RandomAddGameObjects; // parent of all the game objects for this game
 
     public List<int> easyMathList = new List<int>();
 
@@ -133,6 +135,8 @@ public class Math_Addition : MonoBehaviour
             correctAnswerAudio.Play();
 
             // Invoke("TurnOffText",1);
+
+            nextButton.gameObject.SetActive(true);
         }
         else
         {
@@ -145,8 +149,39 @@ public class Math_Addition : MonoBehaviour
     }
 
     public void refreshPuzzle() {
+        nextButton.gameObject.SetActive(false); // hide until another correct answer
+        StartCoroutine(NewProblem());
+    }
+
+    private IEnumerator NewProblem()
+    {
+        Vector3 originalPos = RandomAddGameObjects.transform.position;
+        Vector3 leftOffScreen = originalPos + new Vector3(-1 * Screen.width, 0, 0);
+        Vector3 rightOffScreen = originalPos + new Vector3(Screen.width, 0, 0);
+        float elapsedTime = 0;
+        int moveSpeed = 8;
+
+        while (elapsedTime < 1)
+        {
+            RandomAddGameObjects.transform.position = Vector3.Lerp(RandomAddGameObjects.transform.position, leftOffScreen, Time.deltaTime * moveSpeed);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        RandomAddGameObjects.transform.position = rightOffScreen;
         initializeUI();
         DisplayMathProblem();
+
+        while (elapsedTime < 2)
+        {
+            RandomAddGameObjects.transform.position = Vector3.Lerp(RandomAddGameObjects.transform.position, originalPos, Time.deltaTime * moveSpeed);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        RandomAddGameObjects.transform.position = originalPos; // ensure end at original position since Lerp is inexact
+
+        yield return null;
     }
 
     private void TurnOffText() {
