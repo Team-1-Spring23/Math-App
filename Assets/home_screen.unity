@@ -220,16 +220,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 39874321}
-        m_TargetAssemblyTypeName: PrintMessageScript, Assembly-CSharp
-        m_MethodName: PrintMessage
+      - m_Target: {fileID: 2219507300306786315, guid: 18dce9259e3e9084285188c6fb313c3a, type: 3}
+        m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
+        m_MethodName: puzzleButton
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Adding Fun button clicked
+          m_StringArgument: Random Objects
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &39874323
@@ -879,13 +879,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1262870140}
         m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
         m_MethodName: puzzleButton
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Random Add_Momo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &651178943
@@ -1117,7 +1117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzle_scene: Random Add_Momo
 --- !u!1 &1353930828
 GameObject:
   m_ObjectHideFlags: 0
