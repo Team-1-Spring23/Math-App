@@ -493,13 +493,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 57447d9f0540d8c468ea8b51a99dd545, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1847159230}
+        m_TargetAssemblyTypeName: Objects_Math_Addition, Assembly-CSharp
+        m_MethodName: ButtonAnswer1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2734,13 +2734,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 57447d9f0540d8c468ea8b51a99dd545, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1847159230}
+        m_TargetAssemblyTypeName: Objects_Math_Addition, Assembly-CSharp
+        m_MethodName: ButtonAnswer2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2909,7 +2909,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1847159225}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Math_Addition, Assembly-CSharp
         m_MethodName: ButtonAnswer2
         m_Mode: 1
@@ -3492,13 +3492,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 57447d9f0540d8c468ea8b51a99dd545, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1847159230}
+        m_TargetAssemblyTypeName: Objects_Math_Addition, Assembly-CSharp
+        m_MethodName: ButtonAnswer3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3667,7 +3667,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1847159225}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Math_Addition, Assembly-CSharp
         m_MethodName: ButtonAnswer1
         m_Mode: 1
@@ -4089,7 +4089,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1847159225}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Math_Addition, Assembly-CSharp
         m_MethodName: refreshPuzzle
         m_Mode: 1
@@ -4646,40 +4646,14 @@ GameObject:
   - component: {fileID: 1847159228}
   - component: {fileID: 1847159227}
   - component: {fileID: 1847159226}
-  - component: {fileID: 1847159225}
+  - component: {fileID: 1847159230}
   m_Layer: 5
-  m_Name: MathProblem
+  m_Name: ObjectsMathProblem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1847159225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847159224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57447d9f0540d8c468ea8b51a99dd545, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstNumber: {fileID: 744338065}
-  secondNumber: {fileID: 1177174689}
-  answer1Button: {fileID: 292459136}
-  answer2Button: {fileID: 1067084676}
-  answer3Button: {fileID: 1271068818}
-  nextButton: {fileID: 1447810738}
-  RandomAddGameObjects: {fileID: 812462815}
-  easyMathList: 010000000200000003000000040000000500000006000000070000000800000009000000
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  correctAnswer: 0
-  rightorwrong_Text: {fileID: 806744674}
-  correctAnswerAudio: {fileID: 696836774}
-  incorrectAnswerAudio: {fileID: 455610768}
 --- !u!114 &1847159226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4761,6 +4735,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1847159230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847159224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b930127571c4d3743aedab59a5fc71d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstNumber: {fileID: 744338065}
+  secondNumber: {fileID: 1177174689}
+  answer1Button: {fileID: 292459136}
+  answer2Button: {fileID: 1067084676}
+  answer3Button: {fileID: 1271068818}
+  nextButton: {fileID: 1447810738}
+  ObjectSprite1: {fileID: 21300000, guid: adaac68d8e5d693499597113889d11d3, type: 3}
+  ObjectSprite2: {fileID: 21300000, guid: 9a82544a4e8ea82448062dac5853f931, type: 3}
+  ObjectSprite3: {fileID: 21300000, guid: 97362c8821fe2f7449927570ad6d4d6a, type: 3}
+  Left1Object: {fileID: 551955555}
+  Left2Object: {fileID: 564172231}
+  Left3Object: {fileID: 806740921}
+  Right1Object: {fileID: 1447453043}
+  Right2Object: {fileID: 602386404}
+  Right3Object: {fileID: 795263461}
+  RandomAddGameObjects: {fileID: 812462815}
+  easyMathList: 
+  randomFirstNumber: 0
+  randomSecondNumber: 0
+  correctAnswer: 0
+  rightorwrong_Text: {fileID: 806744674}
+  correctAnswerAudio: {fileID: 696836774}
+  incorrectAnswerAudio: {fileID: 455610768}
 --- !u!1 &1978725764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,7 +4895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1847159225}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Math_Addition, Assembly-CSharp
         m_MethodName: ButtonAnswer3
         m_Mode: 1
