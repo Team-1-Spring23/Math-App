@@ -16,11 +16,10 @@ public class puzzleUI : MonoBehaviour
     {
         
     }
-    [SerializeField]private string puzzle_scene ="Random Add_Momo";
     
-    public void puzzleButton(){
+    public void puzzleButton(string scene){
        
-       SceneManager.LoadScene(puzzle_scene);
+       SceneManager.LoadScene(scene);
  
     }
 }
