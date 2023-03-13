@@ -1,4 +1,4 @@
-| Date | Updates | 
+| Date | Progress updates | 
 | --------------- | --------------- |
 | March 13 2023 | Updated with game algorithm and game features|
 | March 06 2023  | Updated with the technical requirements are going to used to develop the App |
