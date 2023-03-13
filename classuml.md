@@ -1,5 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 13/06/2023  | created uml diagram for GetRandomSum() GetSumOptions(int, int) DisplayProblem() |
 | 03/06/2023  | Generated class uml for beginner in addition practice, Please check the image for a detailed process|
 | 02/27/2023  | Generated class uml for random functions, Please check the image for a detailed process |
 | 02/20/2023  | I have discussed with the developer team about the overview of the classes and attributes, Please check the image for a detailed process |
@@ -9,6 +10,11 @@
 
 
 <b>Other Updates</b>
+
+03/13/2023
+
+![class uml1](https://user-images.githubusercontent.com/126724289/224811583-ac1a74e4-c326-4961-80af-f57ff360764b.png)
+
 
 03/06/2023
 
