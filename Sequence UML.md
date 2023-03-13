@@ -1,6 +1,7 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
-| 03/06/2023 | Added sequence uml addition practice for beginners and also added colours for few objects |
+| 03/13/2023 | Added Sequence UML changes according to changes done by coding team<br>Involved in backend coding and created few objects using C#|
+| 03/06/2023 | Added sequence UML addition practice for beginners and also added colours for few objects |
 | 02/27/2023 | Added counting, adding fun, addition practice, adding quiz, adding puzzle objects<br>Self call function is completed for the above objects. |
 | 02/27/2023 | Added counting, adding fun, addition practice, adding quiz, adding puzzle objects<br>Self call function is completed for the above objects. |
 | 02/20/2023 | Screen 1 uml and Screen 2 uml is progressing<br>Please check the image for detailed progress |
@@ -11,6 +12,9 @@
 
 <b>Other Updates</b>
 
+03/13/2023
+
+![Ram](https://user-images.githubusercontent.com/124210302/224830379-104d971c-369f-4b27-b14e-24fff70cd500.png)
 
 03/06/2023
 
