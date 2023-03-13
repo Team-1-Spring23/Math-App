@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/puzzle_scene.unity
     guid: 015c9dd27dfb1d346bf310ff1072e326
+  - enabled: 1
+    path: Assets/Adding_puzzle.unity
+    guid: a2778790aae744a93852888f688d8ef8
   m_configObjects: {}

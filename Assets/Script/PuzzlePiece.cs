@@ -28,7 +28,7 @@ public class PuzzlePiece : MonoBehaviour
         _offSet = GetMousePos() - (Vector2)transform.position;
     }
     void OnMouseUp(){
-        if(Vector2.Distance (transform.position, _slot.transform.position) <3){
+        if(Vector2.Distance (transform.position, _slot.transform.position) < 10){
             transform.position = _slot.transform.position;
             // _slot.Placed();
             _placed = true;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3702289879422006687}
   - component: {fileID: 7450038303439479201}
   m_Layer: 0
-  m_Name: Puzzle Slot base
+  m_Name: Puzzle Slot 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 724d65e2396684f0497ebb3e1019137c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b29b8fccd860942ecb1fe84bd2befc6f, type: 3}
   m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
