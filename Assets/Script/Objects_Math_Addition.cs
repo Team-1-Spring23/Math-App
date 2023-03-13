@@ -19,9 +19,11 @@ public class Objects_Math_Addition : MonoBehaviour
     public GameObject Left1Object;
     public GameObject Left2Object;
     public GameObject Left3Object;
+    public GameObject Left4Object;
     public GameObject Right1Object;
     public GameObject Right2Object;
     public GameObject Right3Object;
+    public GameObject Right4Object;
     public GameObject RandomAddGameObjects; // parent of all the game objects for this game
 
     public List<int> easyMathList = new List<int>();
@@ -53,7 +55,7 @@ public class Objects_Math_Addition : MonoBehaviour
 
     private (int, int) GetTwoRandomSum() // Return tuple of two random numbers that sum to something between 2 and 5
     {
-        int firstNum = Random.Range(1, 3); // Random integer between 1 and 3
+        int firstNum = Random.Range(1, 5); // Random integer between 1 and 4
         int nextNum = Random.Range(1, 5 - firstNum); // Ensure sum is no more than 5
 
         return (firstNum, nextNum);
@@ -94,6 +96,101 @@ public class Objects_Math_Addition : MonoBehaviour
 
         return (options[0], options[1], options[2]);
     }
+
+    public void updateObjectSprites()
+    {
+        int objNum = Random.Range(1, 4); // randomly select sprite 1, 2, or 3
+        Sprite newSprite = ObjectSprite1;
+        if (objNum == 1)
+        {
+            newSprite = ObjectSprite1;
+        }
+        else if (objNum == 2)
+        {
+            newSprite = ObjectSprite2;
+        }
+        else if (objNum == 3)
+        {
+            newSprite = ObjectSprite3;
+        }
+
+        // left side
+        if (randomFirstNumber == 1)
+        {
+            GameObject obj = Left1Object.transform.GetChild(0).gameObject;
+            obj.GetComponentInChildren<Image>().sprite = newSprite;
+            Left1Object.SetActive(true);
+        }
+        else if (randomFirstNumber == 2)
+        {
+            GameObject obj1 = Left2Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Left2Object.transform.GetChild(1).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            Left2Object.SetActive(true);
+        }
+        else if (randomFirstNumber == 3)
+        {
+            GameObject obj1 = Left3Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Left3Object.transform.GetChild(1).gameObject;
+            GameObject obj3 = Left3Object.transform.GetChild(2).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            obj3.GetComponentInChildren<Image>().sprite = newSprite;
+            Left3Object.SetActive(true);
+        }
+        else if (randomFirstNumber == 4)
+        {
+            GameObject obj1 = Left4Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Left4Object.transform.GetChild(1).gameObject;
+            GameObject obj3 = Left4Object.transform.GetChild(2).gameObject;
+            GameObject obj4 = Left4Object.transform.GetChild(3).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            obj3.GetComponentInChildren<Image>().sprite = newSprite;
+            obj4.GetComponentInChildren<Image>().sprite = newSprite;
+            Left4Object.SetActive(true);
+        }
+
+        // right side
+        if (randomSecondNumber == 1)
+        {
+            GameObject obj = Right1Object.transform.GetChild(0).gameObject;
+            obj.GetComponentInChildren<Image>().sprite = newSprite;
+            Right1Object.SetActive(true);
+        }
+        else if (randomSecondNumber == 2)
+        {
+            GameObject obj1 = Right2Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Right2Object.transform.GetChild(1).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            Right2Object.SetActive(true);
+        }
+        else if (randomSecondNumber == 3)
+        {
+            GameObject obj1 = Right3Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Right3Object.transform.GetChild(1).gameObject;
+            GameObject obj3 = Right3Object.transform.GetChild(2).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            obj3.GetComponentInChildren<Image>().sprite = newSprite;
+            Right3Object.SetActive(true);
+        }
+        else if (randomSecondNumber == 4)
+        {
+            GameObject obj1 = Right4Object.transform.GetChild(0).gameObject;
+            GameObject obj2 = Right4Object.transform.GetChild(1).gameObject;
+            GameObject obj3 = Right4Object.transform.GetChild(2).gameObject;
+            GameObject obj4 = Right4Object.transform.GetChild(3).gameObject;
+            obj1.GetComponentInChildren<Image>().sprite = newSprite;
+            obj2.GetComponentInChildren<Image>().sprite = newSprite;
+            obj3.GetComponentInChildren<Image>().sprite = newSprite;
+            obj4.GetComponentInChildren<Image>().sprite = newSprite;
+            Right4Object.SetActive(true);
+        }
+    }
+
     public void DisplayMathProblem()
     {
         //generate a random number as the first and second numbers
@@ -116,9 +213,7 @@ public class Objects_Math_Addition : MonoBehaviour
         answer3Button.GetComponentInChildren<Text>().text = "" + answerThree;
 
         // Display corresponding objects
-        GameObject obj = Left1Object.transform.GetChild(0).gameObject;
-        Left1Object.SetActive(true);
-        obj.GetComponentInChildren<Image>().sprite = ObjectSprite1;
+        updateObjectSprites();
 
         correctAnswer = randomSum;
     }
@@ -126,7 +221,6 @@ public class Objects_Math_Addition : MonoBehaviour
 
     public void ButtonAnswer1()
     {
-        Debug.Log(34);
         bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
         showResults(isButton1Correct);
     }
@@ -167,6 +261,16 @@ public class Objects_Math_Addition : MonoBehaviour
 
     public void refreshPuzzle() {
         nextButton.gameObject.SetActive(false); // hide until another correct answer
+        // now hide all objects
+        Left1Object.SetActive(false);
+        Left2Object.SetActive(false);
+        Left3Object.SetActive(false);
+        Left4Object.SetActive(false);
+        Right1Object.SetActive(false);
+        Right2Object.SetActive(false);
+        Right3Object.SetActive(false);
+        Right4Object.SetActive(false);
+        // animated transition
         StartCoroutine(NewProblem());
     }
 
