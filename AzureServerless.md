@@ -1,4 +1,4 @@
-# Math-App
+# Azure Serverless
 | Date | Progress Description | 
 | --------------- | --------------- |
 | March 06th 2023  | 1. Working on Serverless Functions, Logic Apps, Workflows. <br> 2.Implementing Host Configuration and JSON files.|
