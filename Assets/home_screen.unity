@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 68876062}
   - component: {fileID: 68876061}
   - component: {fileID: 68876060}
+  - component: {fileID: 68876064}
   m_Layer: 5
   m_Name: Adding Quiz
   m_TagString: Untagged
@@ -367,16 +368,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 68876060}
-        m_TargetAssemblyTypeName: PrintMessageScript, Assembly-CSharp
-        m_MethodName: PrintMessage
+      - m_Target: {fileID: 1262870140}
+        m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
+        m_MethodName: puzzleButton
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Adding Quiz button clicked
+          m_StringArgument: Random Add_Momo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &68876062
@@ -417,6 +418,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68876058}
   m_CullTransparentMesh: 1
+--- !u!114 &68876064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68876058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &92534962
 GameObject:
   m_ObjectHideFlags: 0
