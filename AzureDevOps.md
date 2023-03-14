@@ -1,4 +1,4 @@
-# Math-App
+# Azure DevOps
 | Date | Progress Description | 
 | --------------- | --------------- |
 | March 13th 2023 | 1. Assigned tasks for the upcoming week for the coding team. <br> 2. Created the latest pipeline for the code. <br> 3.Worked on Artifacts. <br> 4. Connected the Feed in Artifacts using NuGet.|
