@@ -1,4 +1,4 @@
-# Math-App
+# Azure App Services
 | Date | Progress Description | 
 | --------------- | --------------- |
 | February 27th 2023 | 1. Deployed the code into Azure App Services from Azure DevOps Repo|
