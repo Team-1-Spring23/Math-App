@@ -1,5 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 03/13/2023  | Suceesfully integrated google admob banner   |
 | 03/06/2023  | Fixed the errors and got the banner script ready, Researched about Azure service portal features  |
 | 02/27/2023  | Trying to integrate the banner script to the trial unity but got errors so I'm following the troubleshooting steps  |
 | 02/20/2023  | Created AdMob Account, working on banner script  |
