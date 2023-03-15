@@ -1,0 +1,8 @@
+| Date | Progress Description |
+| ------------- | ------------- |
+|Jan 30th| Unity and Visual studio setup  |
+|Feb 6th|Studied Unity Developer Guide and C# tutorials  |
+|Feb 13th|Worked with team on planning of the screen, buttons, UI of the game and created button on demo project |
+|Feb 20th|Generating two Random Numbers and display of 3 option boxes: •	Random Numbers generated: Two sets of Random numbers generated every time the game is on play mode •	Options generated: 3 Random number options generated with every time the game is on play mode •	Correct Answer Option: One of the option will show the correct answer option  •	Option Shuffled: Correct option is in shuffled position either in option1, 2 or 3.  Link : https://github.com/Team-1-Spring23/Math-App/pull/13 Links to an external site. Bug observed : one of the option is always zero, summation answer is not always single digit (eg. 8+9 = 17)
+|Feb 27th|Target Completed: - •	3 Option Buttons can be clicked to provide output •	Correct answer text is notified on clicking the right answer  •	Incorrect Text pops out for wrong selection of options  >>Added Task Completed: - •	Sound Added for Correct Answer  •	Sound Added for Incorrect Answer  •	Refresh Button : Added for refreshing the screen and generating new set of random numbers and options •	Back Button : Added to navigate back to the Homescreen  •	Quit Button : Button Added  Git Branch named : correct_ans  Link : Team-1-Spring23/Math-App at correct_ans (github.com) Bug observed : Quit Button functionality of ending the game is yet to be worked on.
+|Mar 6th|Cat Character Added to the “Random_Add Momo” Scene (Random Addition Quiz Game). •	Cat character is a gif object and is animated Link : Team-1-Spring23/Math-App at momo_demo (github.com)
