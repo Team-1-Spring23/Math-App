@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 39874323}
   - component: {fileID: 39874322}
   - component: {fileID: 39874321}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Adding Fun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,8 +161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: -38.89}
-  m_SizeDelta: {x: 160, y: 83.89}
+  m_AnchoredPosition: {x: 453.39, y: -397}
+  m_SizeDelta: {x: 303.08, y: 148.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39874321
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6791dab141fb98a40b7885514af76200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b7279b2da06904095b014101b7377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 68876062}
   - component: {fileID: 68876061}
   - component: {fileID: 68876060}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Adding Quiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,8 +308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: 204.06}
-  m_SizeDelta: {x: 160, y: 85.763}
+  m_AnchoredPosition: {x: 447.98, y: 134}
+  m_SizeDelta: {x: 329.13, y: 144.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68876060
 MonoBehaviour:
@@ -367,16 +367,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 68876060}
-        m_TargetAssemblyTypeName: PrintMessageScript, Assembly-CSharp
-        m_MethodName: PrintMessage
+      - m_Target: {fileID: 1262870140}
+        m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
+        m_MethodName: puzzleButton
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Adding Quiz button clicked
+          m_StringArgument: Adding_Quiz
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &68876062
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6791dab141fb98a40b7885514af76200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b7279b2da06904095b014101b7377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 92534963}
   - component: {fileID: 92534965}
   - component: {fileID: 92534964}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,8 +484,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294580232
-  m_fontColor: {r: 0.03147021, g: 0.09308779, b: 0.9811321, a: 1}
+    rgba: 4294504173
+  m_fontColor: {r: 0.9295301, g: 0.93231803, b: 0.9716981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -502,13 +502,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309260284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.01, y: 0.24, z: 0}
+  m_LocalPosition: {x: -3.07, y: -0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 380921879}
   - component: {fileID: 380921881}
   - component: {fileID: 380921880}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,8 +724,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294779656
-  m_fontColor: {r: 0.031772807, g: 0.13735335, b: 0.990566, a: 1}
+    rgba: 4294111992
+  m_fontColor: {r: 0.9716981, g: 0.9481071, b: 0.947864, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -742,13 +742,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 622966502}
   - component: {fileID: 622966507}
   - component: {fileID: 622966506}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: home_page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0251971b33bbdd443a2d9b69669e69a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dfbfb6b5efc6fd47a5813625c6386ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 651178944}
   - component: {fileID: 651178943}
   - component: {fileID: 651178942}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Adding Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,8 +974,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: 203.35}
-  m_SizeDelta: {x: 160, y: 84.35}
+  m_AnchoredPosition: {x: 444.9, y: 410}
+  m_SizeDelta: {x: 313.76, y: 136.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &651178942
 MonoBehaviour:
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6791dab141fb98a40b7885514af76200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b7279b2da06904095b014101b7377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 1038773983}
   - component: {fileID: 1038773982}
   - component: {fileID: 1038773981}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: 'Addition Practice '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1109,8 +1109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: -40.02}
-  m_SizeDelta: {x: 160, y: 88.39}
+  m_AnchoredPosition: {x: 447.92, y: -119}
+  m_SizeDelta: {x: 329.13, y: 150.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1038773981
 MonoBehaviour:
@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6791dab141fb98a40b7885514af76200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b7279b2da06904095b014101b7377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1588,7 +1588,7 @@ GameObject:
   - component: {fileID: 1452158566}
   - component: {fileID: 1452158565}
   - component: {fileID: 1452158564}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,8 +1613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -294, y: -91}
-  m_SizeDelta: {x: 143.459, y: 42.052}
+  m_AnchoredPosition: {x: -384.56006, y: -27.6}
+  m_SizeDelta: {x: 332.92, y: 123.94}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1452158564
 MonoBehaviour:
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6791dab141fb98a40b7885514af76200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b7279b2da06904095b014101b7377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1765,7 +1765,7 @@ GameObject:
   - component: {fileID: 1505557632}
   - component: {fileID: 1505557634}
   - component: {fileID: 1505557633}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1780,7 +1780,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505557631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00023968}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1789,8 +1789,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -4.0999985, y: 20.801}
-  m_SizeDelta: {x: -21.756, y: 15.069}
+  m_AnchoredPosition: {x: -2.119995, y: 68.603}
+  m_SizeDelta: {x: -17.8, y: 110.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1505557633
 MonoBehaviour:
@@ -1823,8 +1823,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294637558
+  m_fontColor: {r: 0.96632254, g: 0.9671937, b: 0.9811321, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1841,13 +1841,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1902,7 +1902,7 @@ GameObject:
   - component: {fileID: 1518487240}
   - component: {fileID: 1518487242}
   - component: {fileID: 1518487241}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1958,8 +1958,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294580744
-  m_fontColor: {r: 0.03147021, g: 0.10064062, b: 0.9811321, a: 1}
+    rgba: 4294637044
+  m_fontColor: {r: 0.9570666, g: 0.9588566, b: 0.9811321, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1976,13 +1976,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 1821530353}
   - component: {fileID: 1821530355}
   - component: {fileID: 1821530354}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294777866
-  m_fontColor: {r: 0.04111779, g: 0.11068326, b: 0.990566, a: 1}
+    rgba: 4294637558
+  m_fontColor: {r: 0.96632254, g: 0.96741956, b: 0.9811321, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2158,13 +2158,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 1836894750}
   - component: {fileID: 1836894749}
   - component: {fileID: 1836894751}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2268,7 +2268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0251971b33bbdd443a2d9b69669e69a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dfbfb6b5efc6fd47a5813625c6386ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

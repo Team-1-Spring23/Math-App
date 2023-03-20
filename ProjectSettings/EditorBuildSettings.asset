@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Adding_puzzle.unity
     guid: a2778790aae744a93852888f688d8ef8
+  - enabled: 1
+    path: Assets/Adding_Quiz.unity
+    guid: 6b2753eec5241264c9c6b3885c3e731c
   m_configObjects: {}
