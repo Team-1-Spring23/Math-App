@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Math_Addition : MonoBehaviour
 {
+    // Access HelperFunctions
+    private HelperFunctions helperFunctions;
+
     public Text firstNumber;
     public Text secondNumber;
 
@@ -31,69 +34,22 @@ public class Math_Addition : MonoBehaviour
 
     public void Start()
     {
-        initializeUI();
+        helperFunctions = FindObjectOfType<HelperFunctions>();
         DisplayMathProblem();
     }
 
-    public void initializeUI() {
-        if (null != rightorwrong_Text) {
-            rightorwrong_Text.enabled = false;
-        }
-    }
-
-    private (int, int) GetTwoRandomSum() // Return tuple of two random numbers that sum to something between 2 and 9
-    {
-        int firstNum = Random.Range(1, 9); // Random integer between 1 and 8
-        int nextNum = Random.Range(1, 10 - firstNum); // Ensure sum is no more than 9
-
-        return (firstNum, nextNum);
-    }
-    private (int, int, int) GetSumOptions(int firstNum, int nextNum) // Return 3 random options between 1 and 9, one of which is the correct sum
-    {
-        int answer = firstNum + nextNum;
-
-        if (answer < 2 || answer > 9)
-        {
-            throw new System.Exception("GetSumOptions received invalid values to sum");
-        }
-
-        var possibilities = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        possibilities.Remove(answer); // Ensure only one correct answer offered
-
-        // Get first incorrect option
-        int firstOptionIndex = Random.Range(0, possibilities.Count);
-        int firstOption = possibilities[firstOptionIndex];
-
-        // Ensure next incorrect option is different from the first one
-        possibilities.Remove(firstOption);
-
-        // Get next incorrect option
-        int nextOptionIndex = Random.Range(0, possibilities.Count);
-        int nextOption = possibilities[nextOptionIndex];
-
-        // Shuffle options before returning them
-        var options = new List<int>() { answer, firstOption, nextOption };
-        int count = options.Count;
-        for (int i = 0; i < count - 1; ++i)
-        {
-            int rand = Random.Range(i, count);
-            int tmp = options[i];
-            options[i] = options[rand];
-            options[rand] = tmp;
-        }
-
-        return (options[0], options[1], options[2]);
-    }
     public void DisplayMathProblem()
     {
-        //generate a random number as the first and second numbers
-        var nums = GetTwoRandomSum();
+        rightorwrong_Text.enabled = false; // disable text displaying if an answer was correct/incorrect
+
+        // Get two random numbers that sum to something between 2 and 9
+        var nums = helperFunctions.GetTwoRandomSum(9);
         randomFirstNumber = nums.Item1;
         randomSecondNumber = nums.Item2;
         int randomSum = randomFirstNumber + randomSecondNumber;
 
         // Generate options
-        var options = GetSumOptions(randomFirstNumber, randomSecondNumber);
+        var options = helperFunctions.GetSumOptions(randomFirstNumber, randomSecondNumber, 9);
         answerOne = options.Item1;
         answerTwo = options.Item2;
         answerThree = options.Item3;
@@ -108,6 +64,42 @@ public class Math_Addition : MonoBehaviour
         correctAnswer = randomSum;
     }
 
+    public void showResults(bool isCorrectAnswer) // Show whether answer is correct or not
+    {
+        if (isCorrectAnswer)
+        {
+            rightorwrong_Text.enabled = true;
+            rightorwrong_Text.color = Color.green;
+            rightorwrong_Text.text = ("Correct");
+            correctAnswerAudio.Play();
+            nextButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            rightorwrong_Text.enabled = true;
+            rightorwrong_Text.color = Color.red;
+            rightorwrong_Text.text = ("Try again");
+            Invoke("TurnOffText", 1);
+            incorrectAnswerAudio.Play();
+        }
+    }
+    public void refreshPuzzle()
+    {
+        nextButton.gameObject.SetActive(false); // hide until another correct answer
+        StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
+        Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
+    }
+
+    private void TurnOffText()
+    {
+        if (null != rightorwrong_Text)
+        {
+            rightorwrong_Text.enabled = false;
+        }
+    }
+
+    // These functions display whether the corresponding button contains the correct answer, and are called on click
+    // Todo: Called when dragged and dropped into the correct location, instead of on click
     public void ButtonAnswer1()
     {
         bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
@@ -125,70 +117,4 @@ public class Math_Addition : MonoBehaviour
         bool isButton3Correct = answer3Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
         showResults(isButton3Correct);
     }
-
-    public void showResults(bool isCorrectAnswer) {
-        if (isCorrectAnswer)
-        {
-            rightorwrong_Text.enabled = true;
-            rightorwrong_Text.color = Color.green;
-            rightorwrong_Text.text = ("Correct");
-            correctAnswerAudio.Play();
-
-            // Invoke("TurnOffText",1);
-
-            nextButton.gameObject.SetActive(true);
-        }
-        else
-        {
-            rightorwrong_Text.enabled = true;
-            rightorwrong_Text.color = Color.red;
-            rightorwrong_Text.text = ("Try again");
-            Invoke("TurnOffText",1);
-            incorrectAnswerAudio.Play();
-        }
-    }
-
-    public void refreshPuzzle() {
-        nextButton.gameObject.SetActive(false); // hide until another correct answer
-        StartCoroutine(NewProblem());
-    }
-
-    private IEnumerator NewProblem()
-    {
-        Vector3 originalPos = RandomAddGameObjects.transform.position;
-        Vector3 leftOffScreen = originalPos + new Vector3(-1 * Screen.width, 0, 0);
-        Vector3 rightOffScreen = originalPos + new Vector3(Screen.width, 0, 0);
-        float elapsedTime = 0;
-        int moveSpeed = 8;
-
-        while (elapsedTime < 1)
-        {
-            RandomAddGameObjects.transform.position = Vector3.Lerp(RandomAddGameObjects.transform.position, leftOffScreen, Time.deltaTime * moveSpeed);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        RandomAddGameObjects.transform.position = rightOffScreen;
-        initializeUI();
-        DisplayMathProblem();
-
-        while (elapsedTime < 2)
-        {
-            RandomAddGameObjects.transform.position = Vector3.Lerp(RandomAddGameObjects.transform.position, originalPos, Time.deltaTime * moveSpeed);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        RandomAddGameObjects.transform.position = originalPos; // ensure end at original position since Lerp is inexact
-
-        yield return null;
-    }
-
-    private void TurnOffText() {
-        if (null !=  rightorwrong_Text) {
-            rightorwrong_Text.enabled = false;
-        }
-    }
 }
-
-
