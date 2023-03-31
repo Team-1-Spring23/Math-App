@@ -81,8 +81,6 @@ public class AddingQuiz : MonoBehaviour
             rightorwrong_Text.color = Color.green;
             rightorwrong_Text.text = ("Correct");
             correctAnswerAudio.Play();
-
-            // Invoke("TurnOffText",1);
             nextButton.gameObject.SetActive(true);
         }
         else

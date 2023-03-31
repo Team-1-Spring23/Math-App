@@ -5257,6 +5257,7 @@ GameObject:
   - component: {fileID: 1847159227}
   - component: {fileID: 1847159226}
   - component: {fileID: 1847159230}
+  - component: {fileID: 1847159231}
   m_Layer: 5
   m_Name: ObjectsMathProblem
   m_TagString: Untagged
@@ -5382,6 +5383,18 @@ MonoBehaviour:
   rightorwrong_Text: {fileID: 806744674}
   correctAnswerAudio: {fileID: 696836774}
   incorrectAnswerAudio: {fileID: 455610768}
+--- !u!114 &1847159231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847159224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19be4d41d59cc7b4eb487fe4f7f6ef6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1880298711
 GameObject:
   m_ObjectHideFlags: 0
