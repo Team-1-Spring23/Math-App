@@ -148,14 +148,14 @@ public class Objects_Math_Addition : MonoBehaviour
     {
         rightorwrong_Text.enabled = false; // disable text displaying if an answer was correct/incorrect
 
-        // Get two random numbers that sum to something between 2 and 9
-        var nums = helperFunctions.GetTwoRandomSum(9);
+        // Get two random numbers that sum to something between 2 and 5
+        var nums = helperFunctions.GetTwoRandomSum(5);
         randomFirstNumber = nums.Item1;
         randomSecondNumber = nums.Item2;
         int randomSum = randomFirstNumber + randomSecondNumber;
 
         // Generate options
-        var options = helperFunctions.GetSumOptions(randomFirstNumber, randomSecondNumber, 9);
+        var options = helperFunctions.GetSumOptions(randomFirstNumber, randomSecondNumber, 5);
         answerOne = options.Item1;
         answerTwo = options.Item2;
         answerThree = options.Item3;
