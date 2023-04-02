@@ -17,7 +17,7 @@ public class AddingQuiz : MonoBehaviour
     public Button nextButton; // button to go to next problem
     public GameObject RandomAddGameObjects; // parent of all the game objects for this game
 
-
+    public ParticleSystem pSystem;
 
     public int randomFirstNumber;
     public int randomSecondNumber;
@@ -81,6 +81,9 @@ public class AddingQuiz : MonoBehaviour
             rightorwrong_Text.color = Color.green;
             rightorwrong_Text.text = ("Correct");
             correctAnswerAudio.Play();
+            Debug.Log(1);
+            pSystem.Clear();
+            pSystem.Play();
             nextButton.gameObject.SetActive(true);
         }
         else
