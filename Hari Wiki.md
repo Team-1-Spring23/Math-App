@@ -1,6 +1,8 @@
 | Date | Progress updates | 
 | --------------- | --------------- |
-| March 13 2023 | Updated with game algorithm and game features|
+| April 03 2023 | Updated wiki documentary with game features <br> Will work on adding screen screenshots |
+| March 20 2023 | Updated the wiki with UML diagram and SRS |
+| March 13 2023 | Updated with game algorithm|
 | March 06 2023  | Updated with the technical requirements are going to used to develop the App |
 | February 27 2023 | Updated wiki document with the visual studio content and the screens |
 | February 20 2023 | Updated wiki document for the basic game development features such as About the app, platform, softwares used |
