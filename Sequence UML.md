@@ -1,5 +1,7 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 04/03/2023 | Created buttons using blender and made necessary animations and added necessary effects |
+| 03/20/2023 | Helped in finding animation assets <br> Added few animation objects into unity|
 | 03/06/2023 | Added sequence uml addition practice for beginners and also added colours for few objects |
 | 02/27/2023 | Added counting, adding fun, addition practice, adding quiz, adding puzzle objects<br>Self call function is completed for the above objects. |
 | 02/27/2023 | Added counting, adding fun, addition practice, adding quiz, adding puzzle objects<br>Self call function is completed for the above objects. |
@@ -10,6 +12,13 @@
 
 
 <b>Other Updates</b>
+
+04/20/2023
+
+<img width="212" alt="Maroon" src="https://user-images.githubusercontent.com/124210302/229629305-c1beb717-aab5-4956-ada5-0d10170b5fde.png">
+<img width="281" alt="Orange" src="https://user-images.githubusercontent.com/124210302/229629308-c8025ade-5ffe-4059-abb9-6039eac9f5e8.png">
+<img width="297" alt="Green" src="https://user-images.githubusercontent.com/124210302/229629313-f9d19798-8920-4594-b36f-7c209d682e6d.png">
+
 
 
 03/06/2023
