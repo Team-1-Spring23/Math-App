@@ -36,7 +36,14 @@ public class DragDrop : MonoBehaviour
     {
         if (!islocked)
         {
-            AnsB.transform.position = Input.mousePosition; // To move with mouse position
+            //AnsB.transform.position = Input.mousePosition; // To move with mouse position
+            var screenPoint = Input.mousePosition;
+            screenPoint.z = 10.0f; //distance of the plane from the camera
+            AnsB.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+
+            Debug.Log(AnsB.transform.position);
+            Debug.Log(Input.mousePosition);
+            Debug.Log(AnsB.transform.position);
         }
     }
     public void DropObject()
@@ -69,7 +76,8 @@ public class DragDrop : MonoBehaviour
     void OnMouseUp()
     {
         // Load the confetti scene
-        SceneManager.LoadScene("Confetti");
+        //SceneManager.LoadScene("Confetti");
+        // Sparkle effect behind cat
     }
 
 }

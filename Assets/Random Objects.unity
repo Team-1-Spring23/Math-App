@@ -3890,7 +3890,7 @@ Canvas:
   m_GameObject: {fileID: 1237661720}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 539346729}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -4851,7 +4851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1458866466
 Animator:
   serializedVersion: 5
@@ -4932,8 +4932,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458866465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.2652, y: -1.1626, z: 0}
-  m_LocalScale: {x: 0.7293749, y: 0.81615984, z: 1}
+  m_LocalPosition: {x: -4.83, y: -3.22, z: 0}
+  m_LocalScale: {x: 0.8752499, y: 0.81615984, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
