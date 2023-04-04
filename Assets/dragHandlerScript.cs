@@ -77,7 +77,6 @@ public class dragHandlerScript : MonoBehaviour, IBeginDragHandler, IDragHandler,
         var transformPosScreenPoint = transform.position;
         transformPosScreenPoint.z = 10.0f; //distance of the plane from the camera
         d = Vector3.Distance(answerPosScreenPoint, transformPosScreenPoint);
-        Debug.Log(d);
 
 
         if (isOnStart == true)

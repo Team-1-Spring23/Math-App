@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AddingQuiz : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class AddingQuiz : MonoBehaviour
     public Button nextButton; // button to go to next problem
     public GameObject RandomAddGameObjects; // parent of all the game objects for this game
 
-
+    public ParticleSystem pSystem;
 
     public int randomFirstNumber;
     public int randomSecondNumber;
@@ -81,6 +82,8 @@ public class AddingQuiz : MonoBehaviour
             rightorwrong_Text.color = Color.green;
             rightorwrong_Text.text = ("Correct");
             correctAnswerAudio.Play();
+            pSystem.Clear();
+            pSystem.Play();
             nextButton.gameObject.SetActive(true);
         }
         else
@@ -94,12 +97,15 @@ public class AddingQuiz : MonoBehaviour
     }
     public void refreshPuzzle()
     {
+        /* Just commenting this out for the demo
         answer1.transform.position = frstpos1;
         answer2.transform.position = frstpos2;
         answer3.transform.position = frstpos3;
         nextButton.gameObject.SetActive(false); // hide until another correct answer
         StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
         Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
+        */
+        SceneManager.LoadScene("Confetti");
     }
 
     private void TurnOffText()

@@ -19,6 +19,7 @@ public class DragDrop : MonoBehaviour
     public Button NextButton;
     public GameObject Confetti;
 
+    private AddingQuiz addingQuiz; // access AddingQuiz functions
 
     public float dropdistance;
 
@@ -30,6 +31,7 @@ public class DragDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        addingQuiz = FindObjectOfType<AddingQuiz>();
         objectInitPos = AnsB.transform.position;
     }
     public void DragObject()
@@ -52,9 +54,7 @@ public class DragDrop : MonoBehaviour
         {
             islocked = true;
             AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
-            OnMouseUp();
-            Confetti.gameObject.SetActive(true);
-            NextButton.gameObject.SetActive(true);
+            addingQuiz.showResults(true); // show correct answer
         }
         else
         {
@@ -68,12 +68,4 @@ public class DragDrop : MonoBehaviour
     {
         AnsB.transform.position = Input.mousePosition;
     }
-
-    void OnMouseUp()
-    {
-        // Load the confetti scene
-        //SceneManager.LoadScene("Confetti");
-        // Sparkle effect behind cat
-    }
-
 }
