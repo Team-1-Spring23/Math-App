@@ -3,7 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour
@@ -15,6 +17,8 @@ public class DragDrop : MonoBehaviour
     public Text num1;
     public Text num2;
     public Button NextButton;
+    public GameObject Confetti;
+
 
     public float dropdistance;
 
@@ -45,6 +49,8 @@ public class DragDrop : MonoBehaviour
         {
             islocked = true;
             AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
+            OnMouseUp();
+            Confetti.gameObject.SetActive(true);
             NextButton.gameObject.SetActive(true);
         }
         else
@@ -58,6 +64,12 @@ public class DragDrop : MonoBehaviour
     public void OriginalPosition()
     {
         AnsB.transform.position = Input.mousePosition;
+    }
+
+    void OnMouseUp()
+    {
+        // Load the confetti scene
+        SceneManager.LoadScene("Confetti");
     }
 
 }
