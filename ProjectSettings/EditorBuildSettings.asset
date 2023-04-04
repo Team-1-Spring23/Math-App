@@ -17,4 +17,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/store_page.unity
     guid: 8378228d5b2c447da8ed970f71a7d3fa
+  - enabled: 1
+    path: Assets/Random Objects.unity
+    guid: c8e0cf9f96bf66e448421916313be9a5
+  - enabled: 1
+    path: Assets/puzzle_scene.unity
+    guid: 015c9dd27dfb1d346bf310ff1072e326
+  - enabled: 1
+    path: Assets/Adding_puzzle.unity
+    guid: a2778790aae744a93852888f688d8ef8
+  - enabled: 1
+    path: Assets/Adding_Quiz.unity
+    guid: 6b2753eec5241264c9c6b3885c3e731c
+  - enabled: 1
+    path: Assets/Confetti.unity
+    guid: 51d1f542c8493b845b201f19b62b0e83
   m_configObjects: {}
