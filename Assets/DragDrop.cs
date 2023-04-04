@@ -40,10 +40,6 @@ public class DragDrop : MonoBehaviour
             var screenPoint = Input.mousePosition;
             screenPoint.z = 10.0f; //distance of the plane from the camera
             AnsB.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
-
-            Debug.Log(AnsB.transform.position);
-            Debug.Log(Input.mousePosition);
-            Debug.Log(AnsB.transform.position);
         }
     }
     public void DropObject()
