@@ -1,7 +1,7 @@
 # Azure DevOps
 | Date | Progress Description | 
 | --------------- | --------------- |
-| April 3rd 2023 | 1. Ran the latest pipeline for the code. <br> 2. Executed the test cases. <br> 3. Created Sprints for the coding team to work upon.|
+| April 03rd 2023 | 1. Ran the latest pipeline for the code. <br> 2. Executed the test cases. <br> 3. Created Sprints for the coding team to work upon.|
 | March 20th 2023 | 1. Implemented test plans and ran test cases. <br> 2. Updated the tasks for the upcoming week in board items.|
 | March 13th 2023 | 1. Assigned tasks for the upcoming week for the coding team. <br> 2. Created the latest pipeline for the code. <br> 3.Worked on Artifacts. <br> 4. Connected the Feed in Artifacts using NuGet.|
 | March 06th 2023  | 1. Assigned Board items for next week. <br> 2. Set up CI with Azure Pipeline. <br> 3. Cloned GitHub Repo to Azure Repo for latest game updates.|
