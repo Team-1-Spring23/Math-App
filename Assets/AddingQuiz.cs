@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class AddingQuiz : MonoBehaviour
 {
     // Access HelperFunctions
     private HelperFunctions helperFunctions;
+    public int buttonClickCount = 0;
 
     public Text firstNumber;
     public Text secondNumber;
@@ -97,15 +99,26 @@ public class AddingQuiz : MonoBehaviour
     }
     public void refreshPuzzle()
     {
-        /* Just commenting this out for the demo
+        //Just commenting this out for the demo
+        buttonClickCount++;
         answer1.transform.position = frstpos1;
         answer2.transform.position = frstpos2;
         answer3.transform.position = frstpos3;
         nextButton.gameObject.SetActive(false); // hide until another correct answer
         StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
         Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
-        */
+       // confetti scene will appear after 3 clicks of NEXT button
+        if (buttonClickCount == 3) 
+        {
+            ShowConfettiScene();
+            buttonClickCount = 0;
+        }
+    }
+
+    private void ShowConfettiScene()
+    {
         SceneManager.LoadScene("Confetti");
+
     }
 
     private void TurnOffText()
