@@ -42,11 +42,17 @@ public class Objects_Math_Addition : MonoBehaviour
 
     public AudioSource correctAnswerAudio;
     public AudioSource incorrectAnswerAudio;
+    Vector2 frstpos1;
+    Vector2 frstpos2;
+    Vector2 frstpos3;
 
 
     public void Start()
     {
         helperFunctions = FindObjectOfType<HelperFunctions>();
+        frstpos1 = answer1Button.transform.position;
+        frstpos2 = answer2Button.transform.position;
+        frstpos3 = answer3Button.transform.position;
         DisplayMathProblem();
     }
 
@@ -205,6 +211,12 @@ public class Objects_Math_Addition : MonoBehaviour
         Right2Object.SetActive(false);
         Right3Object.SetActive(false);
         Right4Object.SetActive(false);
+        answer1Button.transform.position = frstpos1;
+        answer2Button.transform.position = frstpos2;
+        answer3Button.transform.position = frstpos3;
+        nextButton.gameObject.SetActive(false); // hide until another correct answer
+        // StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
+        // Invoke("DisplayMathProblem", 1);
         // animated transition
         StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
         Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
