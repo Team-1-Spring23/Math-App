@@ -1,5 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 04/10/2023 | Created jelly buttons and added buttons in few screens and updated them accordingly |
 | 04/03/2023 | Created buttons using blender and made necessary animations and added necessary effects |
 | 03/20/2023 | Helped in finding animation assets <br> Added few animation objects into unity|
 | 03/06/2023 | Added sequence uml addition practice for beginners and also added colours for few objects |
