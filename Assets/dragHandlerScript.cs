@@ -33,7 +33,9 @@ public class dragHandlerScript : MonoBehaviour, IBeginDragHandler, IDragHandler,
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        var screenPoint = Input.mousePosition;
+        screenPoint.z = 10.0f; //distance of the plane from the camera
+        transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
     }
 
 
@@ -70,7 +72,11 @@ public class dragHandlerScript : MonoBehaviour, IBeginDragHandler, IDragHandler,
 
     public void Update()
     {
-        d = Vector3.Distance(answerTextPosition.position, transform.position);
+        var answerPosScreenPoint = answerTextPosition.position;
+        answerPosScreenPoint.z = 10.0f; //distance of the plane from the camera
+        var transformPosScreenPoint = transform.position;
+        transformPosScreenPoint.z = 10.0f; //distance of the plane from the camera
+        d = Vector3.Distance(answerPosScreenPoint, transformPosScreenPoint);
 
 
         if (isOnStart == true)
@@ -85,7 +91,7 @@ public class dragHandlerScript : MonoBehaviour, IBeginDragHandler, IDragHandler,
 
     public bool isCorrectSlot()
     {
-        if (d < 60)
+        if (d < 1)
         {
             return true;
         }

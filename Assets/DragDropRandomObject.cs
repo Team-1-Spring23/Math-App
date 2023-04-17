@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DragDrop : MonoBehaviour
+public class DragDropRandomObject : MonoBehaviour
 {
 
     public GameObject Crt_ans;
@@ -16,11 +16,10 @@ public class DragDrop : MonoBehaviour
     public Text Ans;
     public Text num1;
     public Text num2;
-
     public Button NextButton;
     public GameObject Confetti;
 
-    private AddingQuiz addingQuiz; // access AddingQuiz functions
+    private Objects_Math_Addition Objects_Math_Addition; // access Objects_Math_Addition functions
 
     public float dropdistance;
 
@@ -32,7 +31,7 @@ public class DragDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        addingQuiz = FindObjectOfType<AddingQuiz>();
+        Objects_Math_Addition = FindObjectOfType<Objects_Math_Addition>();
         objectInitPos = AnsB.transform.position;
     }
     public void DragObject()
@@ -55,7 +54,7 @@ public class DragDrop : MonoBehaviour
         {
             islocked = true;
             AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
-            addingQuiz.showResults(true); // show correct answer
+            Objects_Math_Addition.showResults(true); // show correct answer
         }
         else
         {
