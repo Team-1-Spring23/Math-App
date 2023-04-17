@@ -5190,6 +5190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54568d044ef3f62458786ca993f6e1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonClickCount: 0
   firstNumber: {fileID: 0}
   secondNumber: {fileID: 0}
   answer1Button: {fileID: 0}
@@ -11184,7 +11185,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -12045,7 +12046,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 812462816}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12363,7 +12364,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 812462816}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12437,7 +12438,7 @@ RectTransform:
   m_GameObject: {fileID: 812462815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.925, y: 0.8375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 672967104}
@@ -12451,13 +12452,13 @@ RectTransform:
   - {fileID: 806744673}
   - {fileID: 1763796159}
   - {fileID: 1144715835}
-  - {fileID: 2052731941}
+  - {fileID: 707012699}
   m_Father: {fileID: 1237661721}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.00003, y: -26}
+  m_AnchoredPosition: {x: -91.106, y: -97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &867284917
@@ -18180,7 +18181,7 @@ RectTransform:
   m_Children:
   - {fileID: 660502086}
   m_Father: {fileID: 812462816}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23399,9 +23400,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.6
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -24196,7 +24197,7 @@ RectTransform:
   m_GameObject: {fileID: 1442029290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.46817994, y: 0.46817994, z: 0.46817994}
+  m_LocalScale: {x: 0.21068096, y: 0.31016922, z: 0.46817994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 645018323}
@@ -24205,7 +24206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 442, y: -369}
+  m_AnchoredPosition: {x: 393, y: -215}
   m_SizeDelta: {x: 425.93, y: 185.0796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442029292
@@ -24513,7 +24514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458866465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.83, y: -3.22, z: 0}
+  m_LocalPosition: {x: -6.72, y: -2.99, z: 0}
   m_LocalScale: {x: 0.8752499, y: 0.81615984, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29330,7 +29331,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1627379202
 GameObject:
@@ -34309,7 +34310,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 812462816}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34531,7 +34532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847159224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
@@ -34554,7 +34555,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847159224}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
