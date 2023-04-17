@@ -14,6 +14,7 @@ public class DragDrop : MonoBehaviour
     public Text Ans;
     public Text num1;
     public Text num2;
+
     public Button NextButton;
 
     public float dropdistance;
@@ -43,9 +44,9 @@ public class DragDrop : MonoBehaviour
         float Distance = Vector3.Distance(AnsB.transform.position, Crt_ans.transform.position);
         if (c == a + b) // Check to idenfity correct answer
         {
-            islocked = true;
-            AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
-            NextButton.gameObject.SetActive(true);
+           islocked = true;
+           AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
+           NextButton.gameObject.SetActive(true);
         }
         else
         {

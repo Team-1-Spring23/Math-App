@@ -103,7 +103,6 @@ public class AddingQuiz : MonoBehaviour
         var nums = GetTwoRandomSum();
         randomFirstNumber = nums.Item1;
         randomSecondNumber = nums.Item2;
-        int randomSum = randomFirstNumber + randomSecondNumber;
 
         // Generate options
         var options = GetSumOptions(randomFirstNumber, randomSecondNumber);
@@ -117,6 +116,7 @@ public class AddingQuiz : MonoBehaviour
         answer1Button.GetComponentInChildren<Text>().text = "" + answerOne;
         answer2Button.GetComponentInChildren<Text>().text = "" + answerTwo;
         answer3Button.GetComponentInChildren<Text>().text = "" + answerThree;
+        int randomSum = randomFirstNumber + randomSecondNumber;
 
         correctAnswer = randomSum;
     }
