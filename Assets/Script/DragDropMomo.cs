@@ -14,6 +14,8 @@ public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private NumberToAudio numberToAudio;
 
+    private Vector3 mousePositionOffset;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        mousePositionOffset = eventData.pointerDrag.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         try
         {
             int number = Int32.Parse(eventData.pointerDrag.transform.GetChild(0).gameObject.GetComponent<Text>().text);
@@ -56,7 +60,18 @@ public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        // rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-        rectTransform.position = Input.mousePosition;
+        Canvas[] canvases = eventData.pointerDrag.transform.GetComponentsInParent<Canvas>();
+        if (null != mousePositionOffset)
+        {
+            eventData.pointerDrag.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + mousePositionOffset;
+        }
+        else if (canvases != null && canvases.Length > 0)
+        {
+            rectTransform.anchoredPosition += eventData.delta / canvases[0].scaleFactor;
+        }
+        else
+        {
+            eventData.pointerDrag.transform.position = Input.mousePosition;
+        }
     }
 }
