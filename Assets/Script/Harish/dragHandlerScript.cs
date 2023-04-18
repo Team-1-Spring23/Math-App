@@ -181,6 +181,29 @@ public class dragHandlerScript : MonoBehaviour
         {
             Debug.Log("All Locked");
             EqualLocked = NumberOneLocked = NumberTwoLocked = AnswerLocked = PlusLocked = false;
+
+            NumberOne.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            //NumberOneButtonText.GetComponent<Image>().material.color = Color.red;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+            NumberTwo.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            //NumberTwoButtonText.GetComponent<Image>().material.color = Color.green;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+            Plus.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            //PlusButtonText.GetComponent<Image>().material.color = Color.green;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+            Answer.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            //AnswerButtonText.GetComponent<Image>().material.color = Color.green;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+            Equal.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            //EqualButtonText.GetComponent<Image>().material.color = Color.green;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+
+
             nextButton.gameObject.SetActive(true);
 
             //This is the code to make the panel text transparent after drag and dropping
@@ -191,30 +214,22 @@ public class dragHandlerScript : MonoBehaviour
             PlusButtonText.color = new Color(1f, 1f, 1f, 0f);
             EqualButtonText.color = new Color(1f, 1f, 1f, 0f);
 
-            NumberOne.gameObject.SetActive(false);
-            NumberTwo.gameObject.SetActive(false);
-            Answer.gameObject.SetActive(false);
-            Plus.gameObject.SetActive(false);
-            Equal.gameObject.SetActive(false);
-
-
-
             // this code to move the numbers to the middle of the screen
 
-            NumberOneText.transform.position = new Vector2((Screen.width / 2f) - 225, Screen.height / 2f);
-            NumberOneText.color = new Color(1f, 1f, 1f, 1f);
+            //NumberOneText.transform.position = new Vector2((Screen.width / 2f) - 225, Screen.height / 2f);
+            //NumberOneText.color = new Color(1f, 1f, 1f, 1f);
 
-            PlusText.transform.position = new Vector2((Screen.width / 2f) - 125, Screen.height / 2f);
-            PlusText.color = new Color(1f, 1f, 1f, 1f);
+            //PlusText.transform.position = new Vector2((Screen.width / 2f) - 125, Screen.height / 2f);
+            //PlusText.color = new Color(1f, 1f, 1f, 1f);
 
-            NumberTwoText.transform.position = new Vector2((Screen.width / 2f), Screen.height / 2f);
-            NumberTwoText.color = new Color(1f, 1f, 1f, 1f);
+            //NumberTwoText.transform.position = new Vector2((Screen.width / 2f), Screen.height / 2f);
+            //NumberTwoText.color = new Color(1f, 1f, 1f, 1f);
 
-            EqualText.transform.position = new Vector2((Screen.width / 2f) + 125, Screen.height / 2f);
-            EqualText.color = new Color(1f, 1f, 1f, 1f);
+            //EqualText.transform.position = new Vector2((Screen.width / 2f) + 125, Screen.height / 2f);
+            //EqualText.color = new Color(1f, 1f, 1f, 1f);
 
-            AnswerText.transform.position = new Vector2((Screen.width / 2f) + 225, Screen.height / 2f);
-            AnswerText.color = new Color(1f, 1f, 1f, 1f);
+            //AnswerText.transform.position = new Vector2((Screen.width / 2f) + 225, Screen.height / 2f);
+            //AnswerText.color = new Color(1f, 1f, 1f, 1f);
 
         }
     }
@@ -247,7 +262,7 @@ public class dragHandlerScript : MonoBehaviour
                 //Change the button and panel transperency 
                 NumberOne.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-
+                NumberOne.gameObject.SetActive(false);
                 // check if all objects are locked or not
                 check_if_all_objects_are_locked();
 
@@ -270,7 +285,7 @@ public class dragHandlerScript : MonoBehaviour
 
                 NumberTwo.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-
+                NumberTwo.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
@@ -290,7 +305,7 @@ public class dragHandlerScript : MonoBehaviour
 
                 Answer.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-
+                Answer.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
@@ -311,7 +326,7 @@ public class dragHandlerScript : MonoBehaviour
                 //change button transperency 
                 Plus.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-
+                Plus.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
@@ -331,7 +346,7 @@ public class dragHandlerScript : MonoBehaviour
 
                 Equal.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-
+                Equal.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else

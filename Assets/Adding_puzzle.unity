@@ -218,8 +218,8 @@ MonoBehaviour:
   NumberOne: {fileID: 1340526831}
   NumberTwo: {fileID: 1482911678}
   Plus: {fileID: 36561529}
-  Equal: {fileID: 1710040144}
-  Answer: {fileID: 312941596}
+  Equal: {fileID: 1160949831}
+  Answer: {fileID: 1710040144}
   nextButton: {fileID: 100635755}
   NumberOneText: {fileID: 865562574}
   NumberTwoText: {fileID: 1142522840}
@@ -231,7 +231,6 @@ MonoBehaviour:
   PlusPanel: {fileID: 991452254}
   EqualPanel: {fileID: 330985603}
   AnswerPanel: {fileID: 312941596}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 582336750}
   NumberTwoButtonText: {fileID: 142825061}
   PlusButtonText: {fileID: 250513492}
@@ -474,7 +473,6 @@ MonoBehaviour:
   PlusPanel: {fileID: 0}
   EqualPanel: {fileID: 0}
   AnswerPanel: {fileID: 0}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 0}
   NumberTwoButtonText: {fileID: 0}
   PlusButtonText: {fileID: 0}
@@ -6659,7 +6657,6 @@ MonoBehaviour:
   PlusPanel: {fileID: 991452254}
   EqualPanel: {fileID: 330985603}
   AnswerPanel: {fileID: 312941596}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 582336750}
   NumberTwoButtonText: {fileID: 142825061}
   PlusButtonText: {fileID: 250513492}
@@ -7019,12 +7016,11 @@ MonoBehaviour:
   PlusPanel: {fileID: 991452254}
   EqualPanel: {fileID: 330985603}
   AnswerPanel: {fileID: 312941596}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 582336750}
   NumberTwoButtonText: {fileID: 142825061}
-  PlusButtonText: {fileID: 321587082}
-  EqualButtonText: {fileID: 250513492}
-  AnswerButtonText: {fileID: 963016785}
+  PlusButtonText: {fileID: 250513492}
+  EqualButtonText: {fileID: 963016785}
+  AnswerButtonText: {fileID: 321587082}
   NumberOneInitialPos: {x: 0, y: 0}
   NumberTwoIntialPos: {x: 0, y: 0}
   PlusInitialPos: {x: 0, y: 0}
@@ -7208,7 +7204,6 @@ MonoBehaviour:
   PlusPanel: {fileID: 991452254}
   EqualPanel: {fileID: 330985603}
   AnswerPanel: {fileID: 312941596}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 582336750}
   NumberTwoButtonText: {fileID: 142825061}
   PlusButtonText: {fileID: 250513492}
@@ -7564,7 +7559,6 @@ MonoBehaviour:
   PlusPanel: {fileID: 991452254}
   EqualPanel: {fileID: 330985603}
   AnswerPanel: {fileID: 312941596}
-  buttonClickCount: 0
   NumberOneButtonText: {fileID: 582336750}
   NumberTwoButtonText: {fileID: 142825061}
   PlusButtonText: {fileID: 250513492}
