@@ -35,6 +35,7 @@ public class AddingQuiz : MonoBehaviour
     public AudioSource incorrectAnswerAudio;
 
     public GameObject correctAnswerSprite;
+    public GameObject incorrectAnswerSprite;
 
     public GameObject answer1;
     public GameObject answer2;
@@ -90,6 +91,7 @@ public class AddingQuiz : MonoBehaviour
             pSystem.Play();
             nextButton.gameObject.SetActive(true);
             correctAnswerSprite.gameObject.SetActive(true);
+            incorrectAnswerSprite.gameObject.SetActive(false);
         }
         else
         {
@@ -98,6 +100,7 @@ public class AddingQuiz : MonoBehaviour
             rightorwrong_Text.text = ("Try again");
             Invoke("TurnOffText", 1);
             incorrectAnswerAudio.Play();
+            incorrectAnswerSprite.gameObject.SetActive(true);
         }
     }
     public void refreshPuzzle()
@@ -109,6 +112,7 @@ public class AddingQuiz : MonoBehaviour
         answer3.transform.position = frstpos3;
         nextButton.gameObject.SetActive(false); // hide until another correct answer
         correctAnswerSprite.gameObject.SetActive(false); // same
+        incorrectAnswerSprite.gameObject.SetActive(false);
         StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
         Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
        // confetti scene will appear after 3 clicks of NEXT button
