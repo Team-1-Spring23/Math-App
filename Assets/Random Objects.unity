@@ -23449,7 +23449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2dfbfb6b5efc6fd47a5813625c6386ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ded24210e3dd464b8d7e0508025d6d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24514,7 +24514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458866465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.72, y: -2.99, z: 0}
+  m_LocalPosition: {x: -7.01, y: -3.11, z: 0}
   m_LocalScale: {x: 0.8752499, y: 0.81615984, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25245,9 +25245,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 6.517478, y: 0.000001789236, z: 0.58900285}
-    m_Rotation: {x: -0.0013426491, y: 0, z: 0}
-    m_Scale: {x: 16.162003, y: 1, z: 1}
+    m_Position: {x: 6.6324887, y: -0.00008594879, z: 0.58900285}
+    m_Rotation: {x: -0.0016420889, y: 0, z: 0}
+    m_Scale: {x: 21.61668, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
