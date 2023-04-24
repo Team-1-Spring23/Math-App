@@ -8,4 +8,8 @@ public class Confetti : MonoBehaviour
     {
         SceneManager.LoadScene("Adding_puzzle");
     }
+    public void QuizNext()
+    {
+        SceneManager.LoadScene("Adding_Quiz");
+    }
 }

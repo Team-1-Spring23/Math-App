@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
 
 public class AddingQuiz : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class AddingQuiz : MonoBehaviour
     private HelperFunctions helperFunctions;
     public int buttonClickCount = 0;
 
-    public Text firstNumber;
-    public Text secondNumber;
+    public TMP_Text firstNumber;
+    public TMP_Text secondNumber;
 
     public Button answer1Button;
     public Button answer2Button;
@@ -70,9 +71,9 @@ public class AddingQuiz : MonoBehaviour
         // Update text of all items
         firstNumber.text = "" + randomFirstNumber;
         secondNumber.text = "" + randomSecondNumber;
-        answer1Button.GetComponentInChildren<Text>().text = "" + answerOne;
-        answer2Button.GetComponentInChildren<Text>().text = "" + answerTwo;
-        answer3Button.GetComponentInChildren<Text>().text = "" + answerThree;
+        answer1Button.GetComponentInChildren<TMP_Text>().text = "" + answerOne;
+        answer2Button.GetComponentInChildren<TMP_Text>().text = "" + answerTwo;
+        answer3Button.GetComponentInChildren<TMP_Text>().text = "" + answerThree;
 
         correctAnswer = randomSum;
     }
@@ -108,7 +109,7 @@ public class AddingQuiz : MonoBehaviour
         StartCoroutine(helperFunctions.TransitionObject(RandomAddGameObjects));
         Invoke("DisplayMathProblem", 1); // Display new problem with 1 second delay (so objects are offscreen when it happens)
        // confetti scene will appear after 3 clicks of NEXT button
-        if (buttonClickCount == 3) 
+        if (buttonClickCount == 2) 
         {
             ShowConfettiScene();
             buttonClickCount = 0;
@@ -117,7 +118,7 @@ public class AddingQuiz : MonoBehaviour
 
     private void ShowConfettiScene()
     {
-        SceneManager.LoadScene("Confetti");
+        SceneManager.LoadScene("Quiz_Confetti");
 
     }
 
@@ -133,19 +134,19 @@ public class AddingQuiz : MonoBehaviour
     // Todo: Called when dragged and dropped into the correct location, instead of on click
     public void ButtonAnswer1()
     {
-        bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        bool isButton1Correct = answer1Button.GetComponentInChildren<TMP_Text>().text.Equals(correctAnswer.ToString());
         showResults(isButton1Correct);
     }
 
     public void ButtonAnswer2()
     {
-        bool isButton2Correct = answer2Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        bool isButton2Correct = answer2Button.GetComponentInChildren<TMP_Text>().text.Equals(correctAnswer.ToString());
         showResults(isButton2Correct);
     }
 
     public void ButtonAnswer3()
     {
-        bool isButton3Correct = answer3Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
+        bool isButton3Correct = answer3Button.GetComponentInChildren<TMP_Text>().text.Equals(correctAnswer.ToString());
         showResults(isButton3Correct);
     }
 }

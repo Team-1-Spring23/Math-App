@@ -68,7 +68,7 @@ public class dragHandlerScript : MonoBehaviour
     {
         buttonClickCount++;
 
-        if (buttonClickCount == 3)
+        if (buttonClickCount == 2)
         {
             ShowConfettiScene();
             buttonClickCount = 0;
