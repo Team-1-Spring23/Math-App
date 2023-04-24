@@ -7,15 +7,15 @@ using UnityEngine.SceneManagement;
 public class backButton : MonoBehaviour
 {
     [SerializeField] private string screen_name;
-    [SerializeField] private GameObject endingSceneTransition;
+    [SerializeField] private GameObject TSL;
     public void backButtonFns()
    {
-        if (endingSceneTransition != null)
+        if (TSL != null)
         {
-            endingSceneTransition.SetActive(true);
+            TSL.SetActive(true);
             Invoke("disableEndTransition", 3f);
 
-            StartCoroutine(loadSceneAfterWait(screen_name, 0.83f));
+            StartCoroutine(loadSceneAfterWait(screen_name, 1.8f));
         }
         else
         {
@@ -31,6 +31,6 @@ public class backButton : MonoBehaviour
 
     private void disableEndTransition()
     {
-        endingSceneTransition.SetActive(false);
+        TSL.SetActive(false);
     }
 }

@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzle_scene: puzzle_scene
+  startingSceneTransition: {fileID: 0}
+  TSL: {fileID: 0}

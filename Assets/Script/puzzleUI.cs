@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class puzzleUI : MonoBehaviour
 {
     [SerializeField] private GameObject startingSceneTransition;
-    [SerializeField] private GameObject endingSceneTransition;
+    [SerializeField] private GameObject TSL;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +23,12 @@ public class puzzleUI : MonoBehaviour
 
     public void puzzleButton(string scene)
     {
-        if (endingSceneTransition != null)
+        if (TSL != null)
         {
-            endingSceneTransition.SetActive(true);
+            TSL.SetActive(true);
             Invoke("disableEndTransition", 3f);
 
-            StartCoroutine(loadSceneAfterWait(scene, 0.83f));
+            StartCoroutine(loadSceneAfterWait(scene, 1.8f));
         }
         else
         {
@@ -50,6 +50,6 @@ public class puzzleUI : MonoBehaviour
 
     private void disableEndTransition()
     {
-        endingSceneTransition.SetActive(false);
+        TSL.SetActive(false);
     }
 }
