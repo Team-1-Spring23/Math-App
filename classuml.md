@@ -1,5 +1,7 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 04/23/2023  | Added changes to the functionalities with methods and attributes |
+| 04/17/2023  | Made the changes to the uml classes by adding new features |
 | 03/06/2023  | Generated class uml for beginner in addition practice, Please check the image for a detailed process|
 | 02/27/2023  | Generated class uml for random functions, Please check the image for a detailed process |
 | 02/20/2023  | I have discussed with the developer team about the overview of the classes and attributes, Please check the image for a detailed process |
