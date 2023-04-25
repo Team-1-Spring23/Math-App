@@ -101,6 +101,7 @@ public class AddingQuiz : MonoBehaviour
             rightorwrong_Text.text = ("Try again");
             Invoke("TurnOffText", 1);
             incorrectAnswerAudio.Play();
+            correctAnswerSprite.gameObject.SetActive(false);
             incorrectAnswerSprite.gameObject.SetActive(true);
         }
     }
