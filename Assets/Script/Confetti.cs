@@ -12,4 +12,9 @@ public class Confetti : MonoBehaviour
     {
         SceneManager.LoadScene("Adding_Quiz");
     }
+
+    public void FunNext()
+    {
+        SceneManager.LoadScene("Random Objects");
+    }
 }
