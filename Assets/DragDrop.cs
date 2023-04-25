@@ -69,8 +69,7 @@ public class DragDrop : MonoBehaviour
         {
             islocked = false;
             AnsB.transform.position = objectInitPos; // Worng answer will be pulled to it's original position
-            NextButton.gameObject.SetActive(false);
-
+            addingQuiz.showResults(false);
         }
     }
 
