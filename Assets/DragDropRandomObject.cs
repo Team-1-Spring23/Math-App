@@ -70,8 +70,7 @@ public class DragDropRandomObject : MonoBehaviour
         {
             islocked = false;
             AnsB.transform.position = objectInitPos; // Worng answer will be pulled to it's original position
-            NextButton.gameObject.SetActive(false);
-
+            Objects_Math_Addition.showResults(false); // show incorrect answer
         }
     }
     public void restartPuzzle()

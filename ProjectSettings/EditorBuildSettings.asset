@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Quiz_Confetti.unity
     guid: 7b812862641be6346a184f69376c2ba8
+  - enabled: 1
+    path: Assets/Fun_Confetti.unity
+    guid: 392cf08b3f216bc4291dca91a23b619a
   m_configObjects: {}
