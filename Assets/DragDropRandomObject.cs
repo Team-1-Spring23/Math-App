@@ -17,7 +17,13 @@ public class DragDropRandomObject : MonoBehaviour
     public Text num1;
     public Text num2;
     public Button NextButton;
-    public GameObject Confetti;
+    private GameObject panelObject;
+    static int Count = 0;
+    private HelperFunctions helperFunctions;
+    public GameObject RandomAddGameObjects; // parent of all the game objects for this game
+
+
+
 
     private Objects_Math_Addition Objects_Math_Addition; // access Objects_Math_Addition functions
 
@@ -55,6 +61,10 @@ public class DragDropRandomObject : MonoBehaviour
             islocked = true;
             AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
             Objects_Math_Addition.showResults(true); // show correct answer
+            //AnsB.transform.position = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            AnsB.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+            panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+            AnsB.gameObject.SetActive(false);
         }
         else
         {
@@ -64,8 +74,17 @@ public class DragDropRandomObject : MonoBehaviour
 
         }
     }
-    public void OriginalPosition()
+    public void restartPuzzle()
     {
-        AnsB.transform.position = Input.mousePosition;
+        Count++;
+        if (Count == 2)
+        {
+            SceneManager.LoadScene("Fun_Confetti");
+            Count = 0;
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
