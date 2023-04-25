@@ -29,6 +29,10 @@ public class Objects_Math_Addition : MonoBehaviour
     public GameObject Right4Object;
     public GameObject RandomAddGameObjects; // parent of all the game objects for this game
 
+    // Incorrect/Correct actions animation
+    public GameObject correctAnswerSprite;
+    public GameObject incorrectAnswerSprite;
+
     public List<int> easyMathList = new List<int>();
 
     public int randomFirstNumber;
@@ -45,6 +49,8 @@ public class Objects_Math_Addition : MonoBehaviour
     Vector2 frstpos1;
     Vector2 frstpos2;
     Vector2 frstpos3;
+
+    Coroutine coroutineMessage;
 
 
     public void Start()
@@ -188,15 +194,32 @@ public class Objects_Math_Addition : MonoBehaviour
             rightorwrong_Text.text = ("Correct");
             correctAnswerAudio.Play();
             nextButton.gameObject.SetActive(true);
+
+            incorrectAnswerSprite.SetActive(false);
+            correctAnswerSprite.SetActive(true);
         }
         else
         {
             rightorwrong_Text.enabled = true;
             rightorwrong_Text.color = Color.red;
+
+            if (null != coroutineMessage) { 
+                StopCoroutine(coroutineMessage);
+            }
+            coroutineMessage = StartCoroutine(disableAnimationAfterMillis(incorrectAnswerSprite, 3.0f));           
+            correctAnswerSprite.SetActive(false);
+            incorrectAnswerSprite.SetActive(true);
+
             rightorwrong_Text.text = ("Try again");
             Invoke("TurnOffText", 1);
             incorrectAnswerAudio.Play();
         }
+    }
+
+    public IEnumerator disableAnimationAfterMillis(GameObject gameObject, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        gameObject.SetActive(false);
     }
 
     public void refreshPuzzle()
@@ -211,6 +234,10 @@ public class Objects_Math_Addition : MonoBehaviour
         Right2Object.SetActive(false);
         Right3Object.SetActive(false);
         Right4Object.SetActive(false);
+
+        correctAnswerSprite.SetActive(false);
+        incorrectAnswerSprite.SetActive(false);
+
         answer1Button.transform.position = frstpos1;
         answer2Button.transform.position = frstpos2;
         answer3Button.transform.position = frstpos3;
