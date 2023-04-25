@@ -1,5 +1,7 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 04/24/2023 | Tested application for any functional errors, and updated functional issues which are resolved and added new errors <br>Updated sequence uml according to new changes<br>Deployed newly created assets wherever needed in unity |
+| 04/17/2023 | Identified functional errors in all the screens<br>Updated Sequence UML in accordance to new changes |
 | 04/10/2023 | Created jelly buttons and added buttons in few screens and updated them accordingly |
 | 04/03/2023 | Created buttons using blender and made necessary animations and added necessary effects |
 | 03/20/2023 | Helped in finding animation assets <br> Added few animation objects into unity|
