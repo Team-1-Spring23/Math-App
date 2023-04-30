@@ -9,7 +9,7 @@
  | 03-13-23	| Updated System Features 2- Generate random numbers and validate the answers, Updated UML, Sequence Diagrams |
  | 03-06-23 | Updated System Features 1- Title / Menu Screen, Updated UML, Sequence Diagrams |
  | 02-27-23 | Updated Hardware interfaces required, Updated Performance requirements,Updated class, Sequence diagrams |
- | 02-20-23	| Updated Overall Description, Added Appendix B: Analysis models- UML Use case diagram, UML Class diagram, UML Sequence diagram,Added Initial Screen, Home Screen, Puzzle Screen, Store Screen to the user interface |
- | 02-13-23	| Updated Introduction- Purpose, Intended audience and reading suggestions, Product scope, Updated external interface requirements,UserInterfaces, Software Interfaces |
+ | 02-20-23	| Updated Overall Description, Added Appendix B: Analysis models- UML Use case diagram, UML Class diagram, UML Sequence diagram,Added Screen,                   Home Screen, Puzzle Screen, Reward Screen to the user interface |
+ | 02-13-23	| Updated Introduction- Purpose, Intended audience and reading suggestions, Product scope, Updated external interface requirements |
  | 02-06-23	| Created initial version of document, Updated SRS with Table of Contents |
 
