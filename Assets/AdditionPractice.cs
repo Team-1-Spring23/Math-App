@@ -12,21 +12,27 @@ public class AdditionPractice : MonoBehaviour
     public Text panel1firstNumber; // Text for each digit in each problem
     public Text panel1secondNumber;
     public Text panel1ans;
+    public Text panel1AnsSlot;
     public Text panel2firstNumber;
     public Text panel2secondNumber;
     public Text panel2ans;
+    public Text panel2AnsSlot;
     public Text panel3firstNumber;
     public Text panel3secondNumber;
     public Text panel3ans;
+    public Text panel3AnsSlot;
     public Text panel4firstNumber;
     public Text panel4secondNumber;
     public Text panel4ans;
+    public Text panel4AnsSlot;
     public Text panel5firstNumber;
     public Text panel5secondNumber;
     public Text panel5ans;
+    public Text panel5AnsSlot;
     public Text panel6firstNumber;
     public Text panel6secondNumber;
     public Text panel6ans;
+    public Text panel6AnsSlot;
 
     public Text answer1Button; // Text of the answer buttons
     public Text answer2Button;
@@ -131,14 +137,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel1firstNumber.gameObject.SetActive(false);
+                panel1AnsSlot.transform.position = panel1firstNumber.transform.position;
+                panel1AnsSlot.gameObject.SetActive(true);         
                 options.Add(int.Parse(panel1firstNumber.text));
                 break;
             case 2:
                 panel1secondNumber.gameObject.SetActive(false);
+                panel1AnsSlot.transform.position = panel1secondNumber.transform.position;
+                panel1AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel1secondNumber.text));
                 break;
             case 3:
                 panel1ans.gameObject.SetActive(false);
+                panel1AnsSlot.transform.position = panel1ans.transform.position;
+                panel1AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel1ans.text));
                 break;
         }
@@ -146,14 +158,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel2firstNumber.gameObject.SetActive(false);
+                panel2AnsSlot.transform.position = panel2firstNumber.transform.position;
+                panel2AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel2firstNumber.text));
                 break;
             case 2:
                 panel2secondNumber.gameObject.SetActive(false);
+                panel2AnsSlot.transform.position = panel2secondNumber.transform.position;
+                panel2AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel2secondNumber.text));
                 break;
             case 3:
                 panel2ans.gameObject.SetActive(false);
+                panel2AnsSlot.transform.position = panel2ans.transform.position;
+                panel2AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel2ans.text));
                 break;
         }
@@ -161,14 +179,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel3firstNumber.gameObject.SetActive(false);
+                panel3AnsSlot.transform.position = panel3firstNumber.transform.position;
+                panel3AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel3firstNumber.text));
                 break;
             case 2:
                 panel3secondNumber.gameObject.SetActive(false);
+                panel3AnsSlot.transform.position = panel3secondNumber.transform.position;
+                panel3AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel3secondNumber.text));
                 break;
             case 3:
                 panel3ans.gameObject.SetActive(false);
+                panel3AnsSlot.transform.position = panel3ans.transform.position;
+                panel3AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel3ans.text));
                 break;
         }
@@ -176,14 +200,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel4firstNumber.gameObject.SetActive(false);
+                panel4AnsSlot.transform.position = panel4firstNumber.transform.position;
+                panel4AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel4firstNumber.text));
                 break;
             case 2:
                 panel4secondNumber.gameObject.SetActive(false);
+                panel4AnsSlot.transform.position = panel4secondNumber.transform.position;
+                panel4AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel4secondNumber.text));
                 break;
             case 3:
                 panel4ans.gameObject.SetActive(false);
+                panel4AnsSlot.transform.position = panel4ans.transform.position;
+                panel4AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel4ans.text));
                 break;
         }
@@ -191,14 +221,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel5firstNumber.gameObject.SetActive(false);
+                panel5AnsSlot.transform.position = panel5firstNumber.transform.position;
+                panel5AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel5firstNumber.text));
                 break;
             case 2:
                 panel5secondNumber.gameObject.SetActive(false);
+                panel5AnsSlot.transform.position = panel5secondNumber.transform.position;
+                panel5AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel5secondNumber.text));
                 break;
             case 3:
                 panel5ans.gameObject.SetActive(false);
+                panel5AnsSlot.transform.position = panel5ans.transform.position;
+                panel5AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel5ans.text));
                 break;
         }
@@ -206,14 +242,20 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel6firstNumber.gameObject.SetActive(false);
+                panel6AnsSlot.transform.position = panel6firstNumber.transform.position;
+                panel6AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel6firstNumber.text));
                 break;
             case 2:
                 panel6secondNumber.gameObject.SetActive(false);
+                panel6AnsSlot.transform.position = panel6secondNumber.transform.position;
+                panel6AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel6secondNumber.text));
                 break;
             case 3:
                 panel6ans.gameObject.SetActive(false);
+                panel6AnsSlot.transform.position = panel6ans.transform.position;
+                panel6AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel6ans.text));
                 break;
         }
