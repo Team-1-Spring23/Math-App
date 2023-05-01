@@ -33,9 +33,17 @@ EditorBuildSettings:
     path: Assets/Confetti.unity
     guid: 51d1f542c8493b845b201f19b62b0e83
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Quiz_Confetti.unity
     guid: 7b812862641be6346a184f69376c2ba8
   - enabled: 1
     path: Assets/Fun_Confetti.unity
     guid: 392cf08b3f216bc4291dca91a23b619a
+=======
+    path: Assets/PracticeAdd.unity
+    guid: 365a04e4d84c8154598e9c8567ac6bbf
+  - enabled: 1
+    path: Assets/Addpractice.unity
+    guid: 6df320df37dc7db42b8259b2142ed883
+>>>>>>> cb1a9c06464c025f835962ad4c084814273d726c
   m_configObjects: {}

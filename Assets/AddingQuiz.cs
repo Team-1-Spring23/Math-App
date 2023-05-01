@@ -64,7 +64,6 @@ public class AddingQuiz : MonoBehaviour
         randomFirstNumber = nums.Item1;
         randomSecondNumber = nums.Item2;
         int randomSum = randomFirstNumber + randomSecondNumber;
-
         // Generate options
         var options = helperFunctions.GetSumOptions(randomFirstNumber, randomSecondNumber, 9);
         answerOne = options.Item1;
