@@ -533,26 +533,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 2078226539}
-  secondNumber: {fileID: 46344961}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &112090260
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,26 +948,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 529276409}
-  secondNumber: {fileID: 786443457}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &182571648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1122,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &182571654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,7 +2626,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &592019791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3407,26 +3427,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 1514788738}
-  secondNumber: {fileID: 248191925}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &1137342725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,7 +4031,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &1319924273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4159,26 +4189,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 441556700}
-  secondNumber: {fileID: 1152993741}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &1376201872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4314,6 +4355,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376201872}
   m_CullTransparentMesh: 1
+--- !u!1 &1395222136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395222138}
+  - component: {fileID: 1395222137}
+  m_Layer: 0
+  m_Name: Admob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1395222137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395222136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1548167f9bf2f8468a4c8850763148b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1395222138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395222136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1343.0199, y: 693.1517, z: -5.3805127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405040041
 GameObject:
   m_ObjectHideFlags: 0
@@ -4533,7 +4618,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 0
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &1444267796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,26 +4757,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 265128758}
-  secondNumber: {fileID: 2128563992}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &1508204891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,7 +5132,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!1 &1604138098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,7 +5275,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &1604138104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5670,7 +5763,6 @@ MonoBehaviour:
   num2: {fileID: 1152993741}
   dropdistance: 40
   islocked: 0
-  objectInitPos: {x: 0, y: 0}
 --- !u!114 &1881697633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5810,26 +5902,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25195b57c9037f46ae3f7982bb1d723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstNumber: {fileID: 530408383}
-  secondNumber: {fileID: 112090262}
-  answer1Button: {fileID: 1881697627}
-  answer2Button: {fileID: 1565959327}
-  answer3Button: {fileID: 1444267792}
-  answer4Button: {fileID: 1604138100}
-  answer5Button: {fileID: 1319924269}
-  answer6Button: {fileID: 592019787}
-  answer7Button: {fileID: 182571650}
-  randomFirstNumber: 0
-  randomSecondNumber: 0
-  options: 00000000000000000000000000000000000000000000000000000000
-  answerOne: 0
-  answerTwo: 0
-  answerThree: 0
-  answerfour: 0
-  answerfive: 0
-  answersix: 0
-  answerseven: 0
-  correctAnswer: 0
+  panel1firstNumber: {fileID: 0}
+  panel1secondNumber: {fileID: 0}
+  panel1ans: {fileID: 0}
+  panel2firstNumber: {fileID: 0}
+  panel2secondNumber: {fileID: 0}
+  panel2ans: {fileID: 0}
+  panel3firstNumber: {fileID: 0}
+  panel3secondNumber: {fileID: 0}
+  panel3ans: {fileID: 0}
+  panel4firstNumber: {fileID: 0}
+  panel4secondNumber: {fileID: 0}
+  panel4ans: {fileID: 0}
+  panel5firstNumber: {fileID: 0}
+  panel5secondNumber: {fileID: 0}
+  panel5ans: {fileID: 0}
+  panel6firstNumber: {fileID: 0}
+  panel6secondNumber: {fileID: 0}
+  panel6ans: {fileID: 0}
+  answer1Button: {fileID: 0}
+  answer2Button: {fileID: 0}
+  answer3Button: {fileID: 0}
+  answer4Button: {fileID: 0}
+  answer5Button: {fileID: 0}
+  answer6Button: {fileID: 0}
+  answer7Button: {fileID: 0}
+  panel1question: 0
+  panel2question: 0
+  panel3question: 0
+  panel4question: 0
+  panel5question: 0
+  panel6question: 0
 --- !u!1 &2063982447
 GameObject:
   m_ObjectHideFlags: 0

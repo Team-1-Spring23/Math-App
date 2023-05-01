@@ -63,7 +63,7 @@ public class AddingQuiz : MonoBehaviour
         var nums = helperFunctions.GetTwoRandomSum(9);
         randomFirstNumber = nums.Item1;
         randomSecondNumber = nums.Item2;
-        int randomSum = randomFirstNumber + randomSecondNumber;
+        int randomSum = randomFirstNumber+ randomSecondNumber;
 
         // Generate options
         var options = helperFunctions.GetSumOptions(randomFirstNumber, randomSecondNumber, 9);
@@ -77,7 +77,6 @@ public class AddingQuiz : MonoBehaviour
         answer1Button.GetComponentInChildren<TMP_Text>().text = "" + answerOne;
         answer2Button.GetComponentInChildren<TMP_Text>().text = "" + answerTwo;
         answer3Button.GetComponentInChildren<TMP_Text>().text = "" + answerThree;
-
         correctAnswer = randomSum;
     }
     public void showResults(bool isCorrectAnswer)
