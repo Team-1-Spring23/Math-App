@@ -56,6 +56,8 @@ public class AdditionPractice : MonoBehaviour
     public int panel5question;
     public int panel6question;
 
+    private HashSet<string> currentPuzzleQuestions = new HashSet<string>();
+
     //public Text rightorwrong_Text;
 
     // public AudioSource correctAnswerAudio;
@@ -86,32 +88,32 @@ public class AdditionPractice : MonoBehaviour
     public void DisplayMathProblem()
     {
         // Set up all 6 problems, first the digits being summed
-        var nums1 = helperFunctions.GetTwoRandomSum(9);
+        var nums1 = getPuzzleNumbers();
         panel1firstNumber.text = "" + nums1.Item1;
         panel1secondNumber.text = "" + nums1.Item2;
         answerOne = nums1.Item1 + nums1.Item2;
 
-        var nums2 = helperFunctions.GetTwoRandomSum(9);
+        var nums2 = getPuzzleNumbers();
         panel2firstNumber.text = "" + nums2.Item1;
         panel2secondNumber.text = "" + nums2.Item2;
         answerTwo = nums2.Item1 + nums2.Item2;
 
-        var nums3 = helperFunctions.GetTwoRandomSum(9);
+        var nums3 = getPuzzleNumbers();
         panel3firstNumber.text = "" + nums3.Item1;
         panel3secondNumber.text = "" + nums3.Item2;
         answerThree = nums3.Item1 + nums3.Item2;
 
-        var nums4 = helperFunctions.GetTwoRandomSum(9);
+        var nums4 = getPuzzleNumbers();
         panel4firstNumber.text = "" + nums4.Item1;
         panel4secondNumber.text = "" + nums4.Item2;
         answerFour = nums4.Item1 + nums4.Item2;
 
-        var nums5 = helperFunctions.GetTwoRandomSum(9);
+        var nums5 = getPuzzleNumbers();
         panel5firstNumber.text = "" + nums5.Item1;
         panel5secondNumber.text = "" + nums5.Item2;
         answerFive = nums5.Item1 + nums5.Item2;
 
-        var nums6 = helperFunctions.GetTwoRandomSum(9);
+        var nums6 = getPuzzleNumbers();
         panel6firstNumber.text = "" + nums6.Item1;
         panel6secondNumber.text = "" + nums6.Item2;
         answerSix = nums6.Item1 + nums6.Item2;
@@ -138,7 +140,7 @@ public class AdditionPractice : MonoBehaviour
             case 1:
                 panel1firstNumber.gameObject.SetActive(false);
                 panel1AnsSlot.transform.position = panel1firstNumber.transform.position;
-                panel1AnsSlot.gameObject.SetActive(true);         
+                panel1AnsSlot.gameObject.SetActive(true);
                 options.Add(int.Parse(panel1firstNumber.text));
                 break;
             case 2:
@@ -290,6 +292,22 @@ public class AdditionPractice : MonoBehaviour
 
         // Now all is set up, and the correct answers are stored in the text of the digits that were hidden during setup
     }
+
+    private (int, int) getPuzzleNumbers()
+    {
+        (int, int) numbers = helperFunctions.GetTwoRandomSum(9);
+        string numbers_key = numbers.Item1.ToString() + numbers.Item2.ToString();
+
+        while (currentPuzzleQuestions.Contains(numbers_key)) {
+            numbers = helperFunctions.GetTwoRandomSum(9);
+            numbers_key = numbers.Item1.ToString() + numbers.Item2.ToString();
+        }
+
+        currentPuzzleQuestions.Add(numbers_key);
+        return numbers;
+    }
+
+
     // public void ButtonAnswer1()
     // {
     //     bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
