@@ -76,7 +76,6 @@ public class AddingQuiz : MonoBehaviour
         answer1Button.GetComponentInChildren<TMP_Text>().text = "" + answerOne;
         answer2Button.GetComponentInChildren<TMP_Text>().text = "" + answerTwo;
         answer3Button.GetComponentInChildren<TMP_Text>().text = "" + answerThree;
-
         correctAnswer = randomSum;
     }
     public void showResults(bool isCorrectAnswer)
