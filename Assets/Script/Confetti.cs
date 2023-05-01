@@ -17,4 +17,9 @@ public class Confetti : MonoBehaviour
     {
         SceneManager.LoadScene("Random Objects");
     }
+
+    public void BeginnerNext()
+    {
+        SceneManager.LoadScene("Addpractice");
+    }
 }

@@ -3,7 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FirstPanel
+  - ThirdPanel
+  - FourthPanel
+  - SixthPanel
+  - Ans1Btn
+  - Ans2Btn
+  - Ans3Btn
+  - Ans4Btn
+  - Ans5Btn
+  - Ans6Btn
+  - AnswerButtonsPanel
+  - BoardTag
+  - Ans7Btn
+  - APanel
+  - FifthPanel
+  - SecondPanel
+  - NextBtn
   layers:
   - Default
   - TransparentFX
