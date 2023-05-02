@@ -29,6 +29,12 @@ public class DraggableButton : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public GameObject cPanel;
 
+    public AudioSource correctAnswerAudio;
+    public AudioSource incorrectAnswerAudio;
+
+    public GameObject correctAnswerSprite;
+    public GameObject incorrectAnswerSprite;
+
 
     // void CheckPanel()
     //{
@@ -138,6 +144,10 @@ public class DraggableButton : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         {
             transform.position = answerPanelObject.transform.position;
 
+            correctAnswerAudio.Play();
+            correctAnswerSprite.gameObject.SetActive(true);
+            incorrectAnswerSprite.gameObject.SetActive(false);
+
             StartCoroutine(WaitOneSecond());
 
             TextInAnswerPanel.text = correctAnswerValue.ToString();
@@ -149,6 +159,9 @@ public class DraggableButton : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         else
         {
+            incorrectAnswerAudio.Play();
+            correctAnswerSprite.gameObject.SetActive(false);
+            incorrectAnswerSprite.gameObject.SetActive(true);
             transform.position = originalPosition;
         }
 
