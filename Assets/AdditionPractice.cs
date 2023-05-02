@@ -41,7 +41,7 @@ public class AdditionPractice : MonoBehaviour
     public Text answer5Button;
     public Text answer6Button;
     public Text answer7Button;
-    
+
     int answerOne; // Values of the correct sums
     int answerTwo;
     int answerThree;
@@ -55,6 +55,10 @@ public class AdditionPractice : MonoBehaviour
     public int panel4question;
     public int panel5question;
     public int panel6question;
+
+    public int numCorrect = 0; // How many answers the user has gotten correct
+
+    public Button NextButton; // Button to go to next problem
 
     private HashSet<string> currentPuzzleQuestions = new HashSet<string>();
 
@@ -84,9 +88,17 @@ public class AdditionPractice : MonoBehaviour
     {
         
     }
+
+    public void incrementCorrect()
+    {
+        ++numCorrect;
+    }
      
     public void DisplayMathProblem()
     {
+        numCorrect = 0; // reset number of correct answers to zero
+        NextButton.gameObject.SetActive(false);
+
         // Set up all 6 problems, first the digits being summed
         var nums1 = getPuzzleNumbers();
         panel1firstNumber.text = "" + nums1.Item1;

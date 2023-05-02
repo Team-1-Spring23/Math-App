@@ -17,6 +17,14 @@ public class AnswerDropSlotMomo : MonoBehaviour, IDropHandler
 
     private Coroutine coroutineMessage;
 
+    public AdditionPractice additionPractice; // Access game script
+
+    void Start()
+    {
+        //Random.InitState(System.DateTime.Now.Millisecond);
+        additionPractice = FindObjectOfType<AdditionPractice>();
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         GameObject draggedObjet = eventData.pointerDrag;
@@ -45,8 +53,16 @@ public class AnswerDropSlotMomo : MonoBehaviour, IDropHandler
             correctAnswerSprite.gameObject.SetActive(true);
             incorrectAnswerSprite.gameObject.SetActive(false);
             coroutineMessage = StartCoroutine(disableAnimationAfterMillis(correctAnswerSprite, 3.0f));
-            draggedObjet.SetActive(false);
+            //draggedObjet.SetActive(false);
             GetComponent<RectTransform>().gameObject.SetActive(false);
+            additionPractice.incrementCorrect();
+            if (additionPractice.numCorrect >= 6)
+            {
+                nextButton.gameObject.SetActive(true);
+                //additionPractice.DisplayMathProblem();
+                //correctAnswerSprite.gameObject.SetActive(false);
+                //incorrectAnswerSprite.gameObject.SetActive(false);
+            }
         }
         else
         {

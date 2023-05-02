@@ -22,4 +22,8 @@ public class Confetti : MonoBehaviour
     {
         SceneManager.LoadScene("Addpractice");
     }
+    public void AdvancedNext()
+    {
+        SceneManager.LoadScene("AddPractice_Advanced");
+    }
 }

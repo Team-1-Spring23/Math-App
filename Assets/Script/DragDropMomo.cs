@@ -35,13 +35,13 @@ public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 0.6f;
+        //canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1f;
+        //canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
         AnsB.transform.position = objectInitPos;
     }
