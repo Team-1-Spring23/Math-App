@@ -1,5 +1,6 @@
 | Date | Progress updates | 
 | --------------- | --------------- |
+| May 01 2023 | Worked on the test plan and added some more screens to wiki |
 | April 24 2023 | Updated the features of the each section and updated the test plan |
 | April 17 2023 | Worked on the test plan |
 | April 10 2023 | Added the latest screen views of the game to Wiki |
