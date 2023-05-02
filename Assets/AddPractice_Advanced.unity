@@ -1431,16 +1431,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 200058600}
-        m_TargetAssemblyTypeName: DragDropRandomObject, Assembly-CSharp
-        m_MethodName: restartPuzzle
-        m_Mode: 1
+      - m_Target: {fileID: 300112650}
+        m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
+        m_MethodName: puzzleButton
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Advanced_Confetti
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &200058602
@@ -2010,6 +2010,7 @@ GameObject:
   - component: {fileID: 300112648}
   - component: {fileID: 300112647}
   - component: {fileID: 300112649}
+  - component: {fileID: 300112650}
   m_Layer: 0
   m_Name: AddPracticeAdvanced
   m_TagString: Untagged
@@ -2093,6 +2094,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19be4d41d59cc7b4eb487fe4f7f6ef6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &300112650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300112646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1227f3abde717fa4b84b1c6164b4fe06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &318365348
