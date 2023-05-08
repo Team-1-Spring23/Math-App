@@ -7046,27 +7046,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8754083b6f794ee3805bd5361a0700f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOne: {fileID: 0}
-  NumberTwo: {fileID: 0}
-  Plus: {fileID: 0}
-  Equal: {fileID: 0}
-  Answer: {fileID: 0}
-  nextButton: {fileID: 0}
-  NumberOneText: {fileID: 0}
-  NumberTwoText: {fileID: 0}
-  PlusText: {fileID: 0}
-  EqualText: {fileID: 0}
-  AnswerText: {fileID: 0}
-  NumberOnePanel: {fileID: 0}
-  NumberTwoPanel: {fileID: 0}
-  PlusPanel: {fileID: 0}
-  EqualPanel: {fileID: 0}
-  AnswerPanel: {fileID: 0}
-  NumberOneButtonText: {fileID: 0}
-  NumberTwoButtonText: {fileID: 0}
-  PlusButtonText: {fileID: 0}
-  EqualButtonText: {fileID: 0}
-  AnswerButtonText: {fileID: 0}
+  NumberOne: {fileID: 1340526831}
+  NumberTwo: {fileID: 1482911678}
+  Plus: {fileID: 36561529}
+  Equal: {fileID: 1160949831}
+  Answer: {fileID: 1710040144}
+  nextButton: {fileID: 100635755}
+  NumberOneText: {fileID: 865562574}
+  NumberTwoText: {fileID: 1142522840}
+  PlusText: {fileID: 2070287837}
+  EqualText: {fileID: 1807730451}
+  AnswerText: {fileID: 513359289}
+  NumberOnePanel: {fileID: 2091487367}
+  NumberTwoPanel: {fileID: 1861497015}
+  PlusPanel: {fileID: 991452254}
+  EqualPanel: {fileID: 330985603}
+  AnswerPanel: {fileID: 312941596}
+  NumberOneButtonText: {fileID: 582336750}
+  NumberTwoButtonText: {fileID: 142825061}
+  PlusButtonText: {fileID: 250513492}
+  EqualButtonText: {fileID: 963016785}
+  AnswerButtonText: {fileID: 321587082}
   NumberOneInitialPos: {x: 0, y: 0}
   NumberTwoIntialPos: {x: 0, y: 0}
   PlusInitialPos: {x: 0, y: 0}
