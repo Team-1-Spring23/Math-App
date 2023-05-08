@@ -19,6 +19,9 @@
 <b>Other Updates</b>
 
 05/08/2023
+
+[Sequence UML.pdf](https://github.com/Team-1-Spring23/Math-App/files/11424724/Sequence.UML.pdf)
+
 ![Ram](https://user-images.githubusercontent.com/124210302/236907810-6414ee74-5a41-456d-b0ff-f1350f17ac34.png)
 
 
