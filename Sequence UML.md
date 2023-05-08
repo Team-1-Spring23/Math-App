@@ -1,5 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 05/08/2023 | Finished Sequence UML with all the necessary changes |
 | 05/01/2023 | Updated sequence uml with necessary changes and also made it according to the new changes |
 | 04/24/2023 | Tested application for any functional errors, and updated functional issues which are resolved and added new errors <br>Updated sequence uml according to new changes<br>Deployed newly created assets wherever needed in unity |
 | 04/17/2023 | Identified functional errors in all the screens<br>Updated Sequence UML in accordance to new changes |
@@ -16,6 +17,10 @@
 
 
 <b>Other Updates</b>
+
+05/08/2023
+![Ram](https://user-images.githubusercontent.com/124210302/236907810-6414ee74-5a41-456d-b0ff-f1350f17ac34.png)
+
 
 05/01/2023
 ![Ram](https://user-images.githubusercontent.com/124210302/235436103-f7bc3479-8b39-478c-a5d0-45716751a622.png)
