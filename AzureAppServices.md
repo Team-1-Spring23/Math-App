@@ -8,3 +8,5 @@
 | February 20th 2023 | 1. Created a sample SQL database in App Service.|
 | February 13th 2023 | 1. Setup Azure App Service Account. <br> 2. Created a sample application on Azure App Service|
 | February 06th 2023 | 1. Installed Unity Hub, Unity Editor, Visual Studio Editor and .NET. <br> 2. Developed Hello World mock app.|
+
+Web App URL - https://mathkidapp20230423235103.azurewebsites.net
