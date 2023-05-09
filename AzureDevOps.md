@@ -1,6 +1,7 @@
 # Azure DevOps
 | Date | Progress Description | 
 | --------------- | --------------- |
+| May 8th 2023 | 1. Created test plans for all the game screens. <br> 2. Pushed the latest Nuget Unity Package to Azure Artifacts.|
 | May 1st 2023 | 1. Created the backlogs of the game in Boards. <br> 2. Generated the latest pipeline of the new branch of code. <br> 3. Created the latest Sprint for this week.|
 | April 24th 2023 | 1. Created and ran the manual test plans as per feedback of the game provided by the coding team.|
 | April 17th 2023 | 1. Created a Feed and Connected the Feed to Visual Studio Code and NuGet using Microsoft Credential Provider. <br> 2. Pushed the NuGet Package to Azure Artifacts.|
