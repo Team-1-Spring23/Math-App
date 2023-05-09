@@ -1,7 +1,7 @@
 # Azure App Services
 | Date | Progress Description | 
 | --------------- | --------------- |
-| May 8th 2023 | 1. Pulled the latest code to Visual Studio, built and published the game as a Web App.<br> 2. URL - https://mathkidapp20230423235103.azurewebsites.net <br> 3. Created Azure Cosmos DB to save the state of the game.|
+| May 8th 2023 | 1. Pulled the latest code to Visual Studio, built and published the game as a Web App.<br> 2. URL - https://mathkidapp20230423235103.azurewebsites.net <br> 3. Created table 'user_profile' in SQL Database to save the state of the game.|
 | April 24th 2023 | 1. Created a Web App in Azure App Services. <br> 2. Built and Ran the game in Unity. <br> 3. Imported the generated build files to Visual Studio, built and published the game to Azure using .NET framework.|
 | April 10th 2023 | 1. Built and Run the latest branch of code to deploy in Azure.|
 | March 20th 2023 | 1. Working with the coding team to host the web app in Azure App Service. <br> 2. Implementing SQL Database to hold the state of the game.|
