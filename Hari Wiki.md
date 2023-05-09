@@ -1,5 +1,6 @@
 | Date | Progress updates | 
 | --------------- | --------------- |
+| May 08 2023 | Worked on the entire documentation and added screens and animation flow and source path for evrey section |
 | May 01 2023 | Worked on the test plan and added some more screens to wiki |
 | April 24 2023 | Updated the features of the each section and updated the test plan |
 | April 17 2023 | Worked on the test plan |
