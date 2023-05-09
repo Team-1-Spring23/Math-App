@@ -1,7 +1,7 @@
 # Azure Serverless
 | Date | Progress Description | 
 | --------------- | --------------- |
-| April 17th 2023  | 1. Developed the code for LoggerFunction. <br> 2. Generated function URL for deployed code.|
+| May 1st 2023  | 1. Developed the code for LoggerFunction. <br> 2. Generated function URL for deployed code.|
 | April 17th 2023  | 1. Setup Azure Serverless API Management Service. <br> 2. Created HTTP trigger for Function App.|
 | April 03rd 2023  | 1. Created and Deployed Logic App. <br> 2. Implementing Trigger and Action for the Logic App|
 | March 06th 2023  | 1. Working on Serverless Functions, Logic Apps, Workflows. <br> 2.Implementing Host Configuration and JSON files.|
