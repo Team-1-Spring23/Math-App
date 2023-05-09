@@ -14,3 +14,4 @@
  |   02/13/23 	| Updated Introduction- Purpose, Intended audience and reading suggestions, Product scope, Updated external interface requirements |
  |   02/06/23 	| Created initial version of document, Updated SRS with Table of Contents |
 
+[Team 1 SRS.pdf](https://github.com/Team-1-Spring23/Math-App/files/11436461/Team.1.SRS.pdf)
