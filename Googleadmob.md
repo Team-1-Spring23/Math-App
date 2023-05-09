@@ -1,6 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
-| 05/08/2023  | Connected google admob to amazon app store as it is live and waiting for the approval from googgle admob   |
+| 05/08/2023  | Connected google admob to amazon app store as it is live and waiting for the approval from google admob   |
 | 05/01/2023  | Created the google admob account, discussed with the team for the further requirements |
 | 04/24/2023  |  Fixed the errors and got interstitial ad script ready  |
 | 04/17/2023  | Created interstitial ad  |
