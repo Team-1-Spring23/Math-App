@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class AdditionPractice : MonoBehaviour
 {
+    private static int MAX_SLOTS = 6;
+
     // Access HelperFunctions
     private HelperFunctions helperFunctions;
 
@@ -42,6 +43,7 @@ public class AdditionPractice : MonoBehaviour
     public Text answer6Button;
     public Text answer7Button;
 
+
     int answerOne; // Values of the correct sums
     int answerTwo;
     int answerThree;
@@ -56,24 +58,19 @@ public class AdditionPractice : MonoBehaviour
     public int panel5question;
     public int panel6question;
 
-    public int numCorrect = 0; // How many answers the user has gotten correct
+    public AudioSource correctAnswerAudio;
+    public AudioSource incorrectAnswerAudio;
 
-    public Button NextButton; // Button to go to next problem
+    public GameObject correctAnswerSprite;
+    public GameObject incorrectAnswerSprite;
+
+    public Button nextButton;
 
     private HashSet<string> currentPuzzleQuestions = new HashSet<string>();
+    private List<int> unsolvedCorrectAnswers = new List<int>();
 
-    //public Text rightorwrong_Text;
-
-    // public AudioSource correctAnswerAudio;
-    // public AudioSource incorrectAnswerAudio;
-
-    // public GameObject answer1;
-    // public GameObject answer2;
-    // public GameObject answer3;
-
-    // Vector2 frstpos1;
-    // Vector2 frstpos2;
-    // Vector2 frstpos3;  
+    private Coroutine correctAnswerCoroutineMessage;
+    private Coroutine incorrectAnswerCoroutineMessage;
 
     // Start is called before the first frame update
     void Start()
@@ -86,18 +83,13 @@ public class AdditionPractice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void incrementCorrect()
-    {
-        ++numCorrect;
-    }
-     
     public void DisplayMathProblem()
     {
-        numCorrect = 0; // reset number of correct answers to zero
-        NextButton.gameObject.SetActive(false);
+        currentPuzzleQuestions.Clear();
+        unsolvedCorrectAnswers.Clear();
 
         // Set up all 6 problems, first the digits being summed
         var nums1 = getPuzzleNumbers();
@@ -146,26 +138,25 @@ public class AdditionPractice : MonoBehaviour
         panel5question = Random.Range(1, 4);
         panel6question = Random.Range(1, 4);
 
-        var options = new List<int>(); // List of answer options (will contain everything that gets hidden here)
         switch (panel1question)
         {
             case 1:
                 panel1firstNumber.gameObject.SetActive(false);
                 panel1AnsSlot.transform.position = panel1firstNumber.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel1firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel1firstNumber.text));
                 break;
             case 2:
                 panel1secondNumber.gameObject.SetActive(false);
                 panel1AnsSlot.transform.position = panel1secondNumber.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel1secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel1secondNumber.text));
                 break;
             case 3:
                 panel1ans.gameObject.SetActive(false);
                 panel1AnsSlot.transform.position = panel1ans.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel1ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel1ans.text));
                 break;
         }
         switch (panel2question)
@@ -174,19 +165,19 @@ public class AdditionPractice : MonoBehaviour
                 panel2firstNumber.gameObject.SetActive(false);
                 panel2AnsSlot.transform.position = panel2firstNumber.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel2firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel2firstNumber.text));
                 break;
             case 2:
                 panel2secondNumber.gameObject.SetActive(false);
                 panel2AnsSlot.transform.position = panel2secondNumber.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel2secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel2secondNumber.text));
                 break;
             case 3:
                 panel2ans.gameObject.SetActive(false);
                 panel2AnsSlot.transform.position = panel2ans.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel2ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel2ans.text));
                 break;
         }
         switch (panel3question)
@@ -195,19 +186,19 @@ public class AdditionPractice : MonoBehaviour
                 panel3firstNumber.gameObject.SetActive(false);
                 panel3AnsSlot.transform.position = panel3firstNumber.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel3firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel3firstNumber.text));
                 break;
             case 2:
                 panel3secondNumber.gameObject.SetActive(false);
                 panel3AnsSlot.transform.position = panel3secondNumber.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel3secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel3secondNumber.text));
                 break;
             case 3:
                 panel3ans.gameObject.SetActive(false);
                 panel3AnsSlot.transform.position = panel3ans.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel3ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel3ans.text));
                 break;
         }
         switch (panel4question)
@@ -216,19 +207,19 @@ public class AdditionPractice : MonoBehaviour
                 panel4firstNumber.gameObject.SetActive(false);
                 panel4AnsSlot.transform.position = panel4firstNumber.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel4firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel4firstNumber.text));
                 break;
             case 2:
                 panel4secondNumber.gameObject.SetActive(false);
                 panel4AnsSlot.transform.position = panel4secondNumber.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel4secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel4secondNumber.text));
                 break;
             case 3:
                 panel4ans.gameObject.SetActive(false);
                 panel4AnsSlot.transform.position = panel4ans.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel4ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel4ans.text));
                 break;
         }
         switch (panel5question)
@@ -237,19 +228,19 @@ public class AdditionPractice : MonoBehaviour
                 panel5firstNumber.gameObject.SetActive(false);
                 panel5AnsSlot.transform.position = panel5firstNumber.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel5firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel5firstNumber.text));
                 break;
             case 2:
                 panel5secondNumber.gameObject.SetActive(false);
                 panel5AnsSlot.transform.position = panel5secondNumber.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel5secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel5secondNumber.text));
                 break;
             case 3:
                 panel5ans.gameObject.SetActive(false);
                 panel5AnsSlot.transform.position = panel5ans.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel5ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel5ans.text));
                 break;
         }
         switch (panel6question)
@@ -258,32 +249,51 @@ public class AdditionPractice : MonoBehaviour
                 panel6firstNumber.gameObject.SetActive(false);
                 panel6AnsSlot.transform.position = panel6firstNumber.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel6firstNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel6firstNumber.text));
                 break;
             case 2:
                 panel6secondNumber.gameObject.SetActive(false);
                 panel6AnsSlot.transform.position = panel6secondNumber.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel6secondNumber.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel6secondNumber.text));
                 break;
             case 3:
                 panel6ans.gameObject.SetActive(false);
                 panel6AnsSlot.transform.position = panel6ans.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
-                options.Add(int.Parse(panel6ans.text));
+                unsolvedCorrectAnswers.Add(int.Parse(panel6ans.text));
                 break;
         }
 
+        answer1Button.transform.parent.transform.parent.gameObject.SetActive(true);
+
         // Set up answer options
+        generateAndSetRandomOptions(unsolvedCorrectAnswers);
+
+        nextButton.gameObject.SetActive(false);
+        correctAnswerSprite.gameObject.SetActive(false);
+        incorrectAnswerSprite.gameObject.SetActive(false);
+    }
+
+    private void generateAndSetRandomOptions(List<int> unsolvedCorrectAnswers)
+    {
+        var options = new List<int>();
+        options.AddRange(unsolvedCorrectAnswers);
         // First pick a random number that is not a correct option, since we need to include 1 dummy option
         var possibilities = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        foreach (var i in options)
+        foreach (var i in unsolvedCorrectAnswers)
         {
             possibilities.Remove(i);
         }
-        int randomIndex = Random.Range(0, possibilities.Count);
-        int dummyAnswer = possibilities[randomIndex];
-        options.Add(dummyAnswer);
+
+        while (options.Count <= MAX_SLOTS)
+        {
+            int randomIndex = Random.Range(0, possibilities.Count);
+            int dummyAnswer = possibilities[randomIndex];
+            options.Add(dummyAnswer);
+            possibilities.Remove(dummyAnswer);
+        }
+
         // Randomize order of options
         int count = options.Count;
         for (int i = 0; i < count - 1; ++i)
@@ -301,61 +311,72 @@ public class AdditionPractice : MonoBehaviour
         answer5Button.text = "" + options[4];
         answer6Button.text = "" + options[5];
         answer7Button.text = "" + options[6];
-
-        // Now all is set up, and the correct answers are stored in the text of the digits that were hidden during setup
     }
 
     private (int, int) getPuzzleNumbers()
     {
         (int, int) numbers = helperFunctions.GetTwoRandomSum(9);
-        string numbers_key = numbers.Item1.ToString() + numbers.Item2.ToString();
+        string numbers_key = numbers.Item1.ToString() + "_" + numbers.Item2.ToString();
 
-        while (currentPuzzleQuestions.Contains(numbers_key)) {
+        while (currentPuzzleQuestions.Contains(numbers_key))
+        {
             numbers = helperFunctions.GetTwoRandomSum(9);
-            numbers_key = numbers.Item1.ToString() + numbers.Item2.ToString();
+            numbers_key = numbers.Item1.ToString() + "_" + numbers.Item2.ToString();
         }
 
         currentPuzzleQuestions.Add(numbers_key);
         return numbers;
     }
 
+    public void processAttempt(bool isCorrectAnswer, string correctValue)
+    {
 
-    // public void ButtonAnswer1()
-    // {
-    //     bool isButton1Correct = answer1Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton1Correct);
-    // }
+        if (isCorrectAnswer)
+        {
+            if (null != correctAnswerCoroutineMessage)
+            {
+                StopCoroutine(correctAnswerCoroutineMessage);
+            }
+            correctAnswerAudio.Play();
+            correctAnswerSprite.gameObject.SetActive(true);
+            incorrectAnswerSprite.gameObject.SetActive(false);
+            correctAnswerCoroutineMessage = StartCoroutine(disableAnimationAfterMillis(correctAnswerSprite, 3.0f));
 
-    // public void ButtonAnswer2()
-    // {
-    //     bool isButton2Correct = answer2Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton2Correct);
-    // }
 
-    // public void ButtonAnswer3()
-    // {
-    //     bool isButton3Correct = answer3Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton3Correct);
-    // }
-    //  public void ButtonAnswer4()
-    //  {
-    //     bool isButton4Correct = answer4Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton4Correct);
-    //  }
-    //  public void ButtonAnswer5()
-    //  {
-    //     bool isButton5Correct = answer5Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton5Correct);
-    //  }
-    //  public void ButtonAnswer6()
-    //  {
-    //     bool isButton6Correct = answer6Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton6Correct);
-    //  }
-    //  public void ButtonAnswer7()
-    //  {
-    //     bool isButton7Correct = answer7Button.GetComponentInChildren<Text>().text.Equals(correctAnswer.ToString());
-    //     showResults(isButton7Correct);
-    //  }
+            if (null != correctValue)
+            {
+                unsolvedCorrectAnswers.Remove(int.Parse(correctValue));
+            }
+
+            if (unsolvedCorrectAnswers.Count == 0)
+            {
+                nextButton.gameObject.SetActive(true);
+                // hide button panel
+                StartCoroutine(disableAnimationAfterMillis(answer1Button.transform.parent.transform.parent.gameObject, 0.25f));
+            }
+            else
+            {
+                // Refresh reshuffle options, if puzzle still not solved
+                generateAndSetRandomOptions(unsolvedCorrectAnswers);
+            }
+        }
+        else
+        {
+            if (null != incorrectAnswerCoroutineMessage)
+            {
+                StopCoroutine(incorrectAnswerCoroutineMessage);
+            }
+            incorrectAnswerAudio.Play();
+            correctAnswerSprite.gameObject.SetActive(false);
+            incorrectAnswerSprite.gameObject.SetActive(true);
+            incorrectAnswerCoroutineMessage = StartCoroutine(disableAnimationAfterMillis(incorrectAnswerSprite, 3.0f));
+        }
+    }
+
+    public IEnumerator disableAnimationAfterMillis(GameObject gameObject, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        gameObject.SetActive(false);
+    }
 
 }

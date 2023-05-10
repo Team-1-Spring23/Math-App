@@ -1612,11 +1612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!114 &224913696
 MonoBehaviour:
@@ -1871,11 +1866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!114 &265039948
 MonoBehaviour:
@@ -2067,8 +2057,11 @@ MonoBehaviour:
   panel4question: 0
   panel5question: 0
   panel6question: 0
-  numCorrect: 0
-  NextButton: {fileID: 200058601}
+  correctAnswerAudio: {fileID: 521948259}
+  incorrectAnswerAudio: {fileID: 630634751}
+  correctAnswerSprite: {fileID: 1593637516}
+  incorrectAnswerSprite: {fileID: 80727551}
+  nextButton: {fileID: 200058601}
 --- !u!4 &300112648
 Transform:
   m_ObjectHideFlags: 0
@@ -3309,11 +3302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!114 &727870325
 MonoBehaviour:
@@ -4049,11 +4037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!114 &1037109746
 MonoBehaviour:
@@ -4373,11 +4356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!1 &1131387120
 GameObject:
@@ -4798,11 +4776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4d3896cda374e9e12249ce066588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswerAudio: {fileID: 521948259}
-  incorrectAnswerAudio: {fileID: 630634751}
-  correctAnswerSprite: {fileID: 1593637516}
-  incorrectAnswerSprite: {fileID: 80727551}
-  nextButton: {fileID: 200058601}
   additionPractice: {fileID: 0}
 --- !u!114 &1205112375
 MonoBehaviour:
