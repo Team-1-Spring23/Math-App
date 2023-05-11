@@ -28,6 +28,14 @@ public class AnswerDropSlotMomo : MonoBehaviour, IDropHandler
             {
                 allChilds[i].gameObject.SetActive(true);
                 GetComponent<RectTransform>().gameObject.SetActive(false);
+
+                // Set all child text color as white
+                Text[] childText = GetComponent<RectTransform>().parent.GetComponentsInChildren<Text>();
+                foreach (Text text in childText)
+                {
+                    text.color = Color.white;
+                }
+
                 isCorrectAnswer = true;
                 correctValue = allChilds[i].gameObject.GetComponent<Text>().text;
                 draggedObjet.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";

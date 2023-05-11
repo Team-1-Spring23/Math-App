@@ -142,18 +142,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel1firstNumber.gameObject.SetActive(false);
+                panel1secondNumber.color = Color.green;
+                panel1ans.color = Color.yellow;
                 panel1AnsSlot.transform.position = panel1firstNumber.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel1firstNumber.text));
                 break;
             case 2:
                 panel1secondNumber.gameObject.SetActive(false);
+                panel1firstNumber.color = Color.green;
+                panel1ans.color = Color.yellow;
                 panel1AnsSlot.transform.position = panel1secondNumber.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel1secondNumber.text));
                 break;
             case 3:
                 panel1ans.gameObject.SetActive(false);
+                panel1firstNumber.color = Color.green;
+                panel1secondNumber.color = Color.yellow;
                 panel1AnsSlot.transform.position = panel1ans.transform.position;
                 panel1AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel1ans.text));
@@ -163,18 +169,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel2firstNumber.gameObject.SetActive(false);
+                panel2secondNumber.color = Color.green;
+                panel2ans.color = Color.yellow;
                 panel2AnsSlot.transform.position = panel2firstNumber.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel2firstNumber.text));
                 break;
             case 2:
                 panel2secondNumber.gameObject.SetActive(false);
+                panel2firstNumber.color = Color.green;
+                panel2ans.color = Color.yellow;
                 panel2AnsSlot.transform.position = panel2secondNumber.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel2secondNumber.text));
                 break;
             case 3:
                 panel2ans.gameObject.SetActive(false);
+                panel2firstNumber.color = Color.green;
+                panel2secondNumber.color = Color.yellow;
                 panel2AnsSlot.transform.position = panel2ans.transform.position;
                 panel2AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel2ans.text));
@@ -184,18 +196,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel3firstNumber.gameObject.SetActive(false);
+                panel3secondNumber.color = Color.green;
+                panel3ans.color = Color.yellow;
                 panel3AnsSlot.transform.position = panel3firstNumber.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel3firstNumber.text));
                 break;
             case 2:
                 panel3secondNumber.gameObject.SetActive(false);
+                panel3firstNumber.color = Color.green;
+                panel3ans.color = Color.yellow;
                 panel3AnsSlot.transform.position = panel3secondNumber.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel3secondNumber.text));
                 break;
             case 3:
                 panel3ans.gameObject.SetActive(false);
+                panel3firstNumber.color = Color.green;
+                panel3secondNumber.color = Color.yellow;
                 panel3AnsSlot.transform.position = panel3ans.transform.position;
                 panel3AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel3ans.text));
@@ -205,18 +223,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel4firstNumber.gameObject.SetActive(false);
+                panel4secondNumber.color = Color.green;
+                panel4ans.color = Color.yellow;
                 panel4AnsSlot.transform.position = panel4firstNumber.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel4firstNumber.text));
                 break;
             case 2:
                 panel4secondNumber.gameObject.SetActive(false);
+                panel4firstNumber.color = Color.green;
+                panel4ans.color = Color.yellow;
                 panel4AnsSlot.transform.position = panel4secondNumber.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel4secondNumber.text));
                 break;
             case 3:
                 panel4ans.gameObject.SetActive(false);
+                panel4firstNumber.color = Color.green;
+                panel4secondNumber.color = Color.yellow;
                 panel4AnsSlot.transform.position = panel4ans.transform.position;
                 panel4AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel4ans.text));
@@ -226,18 +250,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel5firstNumber.gameObject.SetActive(false);
+                panel5secondNumber.color = Color.green;
+                panel5ans.color = Color.yellow;
                 panel5AnsSlot.transform.position = panel5firstNumber.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel5firstNumber.text));
                 break;
             case 2:
                 panel5secondNumber.gameObject.SetActive(false);
+                panel5firstNumber.color = Color.green;
+                panel5ans.color = Color.yellow;
                 panel5AnsSlot.transform.position = panel5secondNumber.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel5secondNumber.text));
                 break;
             case 3:
                 panel5ans.gameObject.SetActive(false);
+                panel5firstNumber.color = Color.green;
+                panel5secondNumber.color = Color.yellow;
                 panel5AnsSlot.transform.position = panel5ans.transform.position;
                 panel5AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel5ans.text));
@@ -247,18 +277,24 @@ public class AdditionPractice : MonoBehaviour
         {
             case 1:
                 panel6firstNumber.gameObject.SetActive(false);
+                panel6secondNumber.color = Color.green;
+                panel6ans.color = Color.yellow;
                 panel6AnsSlot.transform.position = panel6firstNumber.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel6firstNumber.text));
                 break;
             case 2:
                 panel6secondNumber.gameObject.SetActive(false);
+                panel6firstNumber.color = Color.green;
+                panel6ans.color = Color.yellow;
                 panel6AnsSlot.transform.position = panel6secondNumber.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel6secondNumber.text));
                 break;
             case 3:
                 panel6ans.gameObject.SetActive(false);
+                panel6firstNumber.color = Color.green;
+                panel6secondNumber.color = Color.yellow;
                 panel6AnsSlot.transform.position = panel6ans.transform.position;
                 panel6AnsSlot.gameObject.SetActive(true);
                 unsolvedCorrectAnswers.Add(int.Parse(panel6ans.text));
