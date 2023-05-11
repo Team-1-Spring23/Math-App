@@ -131,31 +131,43 @@ public class AdditionPracticeIntermediate : MonoBehaviour
         panel6ans.text = "" + answerSix;
 
         panel1ans.gameObject.SetActive(false);
+        panel1firstNumber.color = Color.green;
+        panel1secondNumber.color = Color.yellow;
         panel1AnsSlot.transform.position = panel1ans.transform.position;
         panel1AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel1ans.text));
 
         panel2ans.gameObject.SetActive(false);
+        panel2firstNumber.color = Color.green;
+        panel2secondNumber.color = Color.yellow;
         panel2AnsSlot.transform.position = panel2ans.transform.position;
         panel2AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel2ans.text));
 
         panel3ans.gameObject.SetActive(false);
+        panel3firstNumber.color = Color.green;
+        panel3secondNumber.color = Color.yellow;
         panel3AnsSlot.transform.position = panel3ans.transform.position;
         panel3AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel3ans.text));
 
         panel4ans.gameObject.SetActive(false);
+        panel4firstNumber.color = Color.green;
+        panel4secondNumber.color = Color.yellow;
         panel4AnsSlot.transform.position = panel4ans.transform.position;
         panel4AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel4ans.text));
 
         panel5ans.gameObject.SetActive(false);
+        panel5firstNumber.color = Color.green;
+        panel5secondNumber.color = Color.yellow;
         panel5AnsSlot.transform.position = panel5ans.transform.position;
         panel5AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel5ans.text));
 
         panel6ans.gameObject.SetActive(false);
+        panel6firstNumber.color = Color.green;
+        panel6secondNumber.color = Color.yellow;
         panel6AnsSlot.transform.position = panel6ans.transform.position;
         panel6AnsSlot.gameObject.SetActive(true);
         unsolvedCorrectAnswers.Add(int.Parse(panel6ans.text));
