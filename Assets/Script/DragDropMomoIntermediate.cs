@@ -1,11 +1,7 @@
-using JetBrains.Annotations;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Globalization;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 public class DragDropMomoIntermediate : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
@@ -17,14 +13,13 @@ public class DragDropMomoIntermediate : MonoBehaviour, IBeginDragHandler, IEndDr
 
     Vector2 objectInitPos;
 
+    private NumberToAudio numberToAudio;
+
     // Start is called before the first frame update
     void Start()
     {
-
-        //panel = GameObject.Find("Buttons_Panel");
-        //buttons=panel.GetComponentInChildren<Button>();         
         objectInitPos = AnsB.transform.position;
-
+        numberToAudio = FindObjectOfType<NumberToAudio>();
     }
 
     private void Awake()
@@ -35,6 +30,16 @@ public class DragDropMomoIntermediate : MonoBehaviour, IBeginDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        try
+        {
+            int number = Int32.Parse(eventData.pointerDrag.transform.GetChild(0).gameObject.GetComponent<Text>().text);
+            numberToAudio.playAudioForNumber(number);
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+        }
+
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
     }
