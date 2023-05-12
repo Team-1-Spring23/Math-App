@@ -15,3 +15,59 @@
 | February 13th 2023 | 1. Created Boards and listed work items. <br> 2. Created 3 epics for Infrastructure, Documentation and Coding and assigned tasks to team members.|
 | February 06th 2023 | 1. Created a mock Hello World App to test button functionalities.|
 | January 30th 2023 | 1. Setup Azure DevOps Account. <br> 2. Created the Project in DevOps Server. <br> 3.Added members and gave access to the members of the project.|
+
+
+Azure Boards
+Work Items –
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/982f197a-047b-446b-9d5c-58934f67591c)
+
+ 
+
+Boards –
+ 
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/6be4e65f-2924-4a97-8a03-fc9eceb74cf3)
+
+
+
+Backlogs –
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/d5e6e67e-97a7-49ca-8721-974e22e0e57f)
+
+ 
+Sprints –
+ 
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/ee7981da-67b0-4760-a238-fd38c70ea557)
+
+
+
+
+Azure Repos –
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/209b049c-60e8-42ee-97ee-04b49d50d09f)
+
+ 
+
+Azure Pipelines –
+ 
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/4bf02d4a-bd2d-4ce7-91c4-8fb695f0dda1)
+
+
+
+Releases –
+ 
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/0d3cd91b-54cb-4c9a-8cce-9da8e1e55355)
+
+
+Azure Test Plans -
+
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/785d1cf6-fcb7-4212-ae92-0134f6e51ed7)
+
+
+Azure Artifacts –
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/481ad711-d081-403c-b0f0-fdf8cae18bab)
+
+
+ 
