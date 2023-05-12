@@ -9,3 +9,14 @@
 | February 20th 2023 | 1. Created a sample SQL database in App Service.|
 | February 13th 2023 | 1. Setup Azure App Service Account. <br> 2. Created a sample application on Azure App Service|
 | February 06th 2023 | 1. Installed Unity Hub, Unity Editor, Visual Studio Editor and .NET. <br> 2. Developed Hello World mock app.|
+
+
+Screenshots-
+
+
+Azure SQL Database -
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/299ca70f-4e93-4380-9ce7-3aad59936215)
+
+
+![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/e93dd3f6-86f5-41e7-80dc-7157ab5fc22e)
