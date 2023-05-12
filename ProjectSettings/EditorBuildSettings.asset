@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Advanced_Confetti.unity
     guid: 39e608200cf5c3c4d9c063d6e3895891
   - enabled: 1
+    path: Assets/Drag_n_drop_sample.unity
+    guid: d6d64ba3c39754f309c97d65c5a620d4
+  - enabled: 1
     path: Assets/Confetti.unity
     guid: 51d1f542c8493b845b201f19b62b0e83
   - enabled: 1
