@@ -8,6 +8,8 @@ public class SceneTransitionManager : MonoBehaviour
     static SceneTransitionManager instance;
     static Animator animator;
 
+    private Coroutine coroutineMessage;
+
     void Awake()
     {
         if (instance == null)
@@ -37,7 +39,11 @@ public class SceneTransitionManager : MonoBehaviour
     {
         if (animator != null)
         {
-            StartCoroutine(loadSceneAfterWait(scene, 0.95f));
+            if (null != coroutineMessage)
+            {
+                StopCoroutine(coroutineMessage);
+            }
+            coroutineMessage = StartCoroutine(loadSceneAfterWait(scene, 0.95f));
         }
         else
         {
