@@ -17,7 +17,10 @@
 | January 30th 2023 | 1. Setup Azure DevOps Account. <br> 2. Created the Project in DevOps Server. <br> 3.Added members and gave access to the members of the project.|
 
 
+Screenshots-
+
 Azure Boards
+
 Work Items –
 
 ![image](https://github.com/Team-1-Spring23/Math-App/assets/51319626/982f197a-047b-446b-9d5c-58934f67591c)
