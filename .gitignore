@@ -142,3 +142,8 @@ crashlytics-build.properties
 
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .history
+
+
+#node_modules 
+
+/NodeJs/node_modules
