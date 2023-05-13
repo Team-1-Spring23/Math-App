@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+
+public class DragDropMomoIntermediate : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public GameObject AnsB;
 
@@ -19,12 +20,8 @@ public class DragDropMomo : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     // Start is called before the first frame update
     void Start()
     {
-
-        //panel = GameObject.Find("Buttons_Panel");
-        //buttons=panel.GetComponentInChildren<Button>();         
         objectInitPos = AnsB.transform.position;
         numberToAudio = FindObjectOfType<NumberToAudio>();
-
     }
 
     private void Awake()

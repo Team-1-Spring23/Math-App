@@ -1,15 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class AnswerDropSlotMomo : MonoBehaviour, IDropHandler
+public class AnswerDropSlotIntermediateMomo : MonoBehaviour, IDropHandler
 {
-    public AdditionPractice additionPractice; // Access game script
+    public AdditionPracticeIntermediate additionPracticeIntermediate; // Access game script
 
     void Start()
     {
-        additionPractice = FindObjectOfType<AdditionPractice>();
+        additionPracticeIntermediate = FindObjectOfType<AdditionPracticeIntermediate>();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -44,9 +43,9 @@ public class AnswerDropSlotMomo : MonoBehaviour, IDropHandler
             }
         }
 
-        if (null != additionPractice)
+        if (null != additionPracticeIntermediate)
         {
-            additionPractice.processAttempt(isCorrectAnswer, correctValue);
+            additionPracticeIntermediate.processAttempt(isCorrectAnswer, correctValue);
         }
 
     }
