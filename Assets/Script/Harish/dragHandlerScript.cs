@@ -30,6 +30,9 @@ public class dragHandlerScript : MonoBehaviour
     static bool AnswerLocked;
     static bool PlusLocked;
 
+    public GameObject correctAnswerSprite;
+    public GameObject incorrectAnswerSprite;
+
 
     public GameObject NumberOnePanel;
     public GameObject NumberTwoPanel;
@@ -263,6 +266,8 @@ public class dragHandlerScript : MonoBehaviour
                 NumberOne.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 NumberOne.gameObject.SetActive(false);
+                correctAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerSprite.gameObject.SetActive(false);
                 // check if all objects are locked or not
                 check_if_all_objects_are_locked();
 
@@ -271,6 +276,8 @@ public class dragHandlerScript : MonoBehaviour
             {
                 //If it enters here it means that return back to same position
                 obj.transform.position = NumberOneInitialPos;
+                correctAnswerSprite.gameObject.SetActive(false);
+                incorrectAnswerSprite.gameObject.SetActive(true);
             }
             return;
         }
@@ -286,11 +293,15 @@ public class dragHandlerScript : MonoBehaviour
                 NumberTwo.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 NumberTwo.gameObject.SetActive(false);
+                correctAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerSprite.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
             {
                 obj.transform.position = NumberTwoIntialPos;
+                correctAnswerSprite.gameObject.SetActive(false);
+                incorrectAnswerSprite.gameObject.SetActive(true);
             }
             return;
         }
@@ -306,11 +317,15 @@ public class dragHandlerScript : MonoBehaviour
                 Answer.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 Answer.gameObject.SetActive(false);
+                correctAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerSprite.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
             {
                 obj.transform.position = AnswerInitialPos;
+                correctAnswerSprite.gameObject.SetActive(false);
+                incorrectAnswerSprite.gameObject.SetActive(true);
             }
             return;
         }
@@ -327,11 +342,15 @@ public class dragHandlerScript : MonoBehaviour
                 Plus.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 Plus.gameObject.SetActive(false);
+                correctAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerSprite.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
             {
                 obj.transform.position = PlusInitialPos;
+                correctAnswerSprite.gameObject.SetActive(false);
+                incorrectAnswerSprite.gameObject.SetActive(true);
             }
             return;
         }
@@ -347,11 +366,15 @@ public class dragHandlerScript : MonoBehaviour
                 Equal.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
                 Equal.gameObject.SetActive(false);
+                correctAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerSprite.gameObject.SetActive(false);
                 check_if_all_objects_are_locked();
             }
             else
             {
                 obj.transform.position = EqualInitialPos;
+                correctAnswerSprite.gameObject.SetActive(false);
+                incorrectAnswerSprite.gameObject.SetActive(true);
             }
             return;
         }
