@@ -102,6 +102,14 @@ public class SubBeginner : MonoBehaviour
 
         changePanelTransparency(presentlyActivePanel);
 
+        foreach (GameObject panel in panelsQueue)
+        {
+            TextMeshProUGUI[] allChildTextComponents = panel.GetComponentsInChildren<TextMeshProUGUI>();
+            foreach (TextMeshProUGUI childText in allChildTextComponents)
+            {
+                childText.color = new Color(childText.color.r, childText.color.g, childText.color.b, 0.3f);
+            }
+        }
 
         // Connect the Board to Tag
 
@@ -196,6 +204,12 @@ public class SubBeginner : MonoBehaviour
         panelColor.a = 0.3f;
 
         panelImage.color = panelColor;
+
+        TextMeshProUGUI[] allChildTextComponents = currentPanel.GetComponentsInChildren<TextMeshProUGUI>();
+        foreach (TextMeshProUGUI childText in allChildTextComponents)
+        {
+            childText.color = new Color(childText.color.r, childText.color.g, childText.color.b, 1f);
+        }
 
     }
 

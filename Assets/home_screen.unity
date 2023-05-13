@@ -220,7 +220,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2219507300306786315, guid: 18dce9259e3e9084285188c6fb313c3a, type: 3}
+      - m_Target: {fileID: 1262870140}
         m_TargetAssemblyTypeName: puzzleUI, Assembly-CSharp
         m_MethodName: puzzleButton
         m_Mode: 5
