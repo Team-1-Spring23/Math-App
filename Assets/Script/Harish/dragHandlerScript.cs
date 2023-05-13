@@ -33,6 +33,8 @@ public class dragHandlerScript : MonoBehaviour
     public GameObject correctAnswerSprite;
     public GameObject incorrectAnswerSprite;
 
+    public AudioSource correctAnswerAudio;
+    public AudioSource incorrectAnswerAudio;
 
     public GameObject NumberOnePanel;
     public GameObject NumberTwoPanel;
@@ -268,6 +270,7 @@ public class dragHandlerScript : MonoBehaviour
                 NumberOne.gameObject.SetActive(false);
                 correctAnswerSprite.gameObject.SetActive(true);
                 incorrectAnswerSprite.gameObject.SetActive(false);
+                correctAnswerAudio.Play();
                 // check if all objects are locked or not
                 check_if_all_objects_are_locked();
 
@@ -278,6 +281,7 @@ public class dragHandlerScript : MonoBehaviour
                 obj.transform.position = NumberOneInitialPos;
                 correctAnswerSprite.gameObject.SetActive(false);
                 incorrectAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerAudio.Play();
             }
             return;
         }
@@ -295,6 +299,7 @@ public class dragHandlerScript : MonoBehaviour
                 NumberTwo.gameObject.SetActive(false);
                 correctAnswerSprite.gameObject.SetActive(true);
                 incorrectAnswerSprite.gameObject.SetActive(false);
+                correctAnswerAudio.Play();
                 check_if_all_objects_are_locked();
             }
             else
@@ -302,6 +307,7 @@ public class dragHandlerScript : MonoBehaviour
                 obj.transform.position = NumberTwoIntialPos;
                 correctAnswerSprite.gameObject.SetActive(false);
                 incorrectAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerAudio.Play();
             }
             return;
         }
@@ -319,6 +325,7 @@ public class dragHandlerScript : MonoBehaviour
                 Answer.gameObject.SetActive(false);
                 correctAnswerSprite.gameObject.SetActive(true);
                 incorrectAnswerSprite.gameObject.SetActive(false);
+                correctAnswerAudio.Play();
                 check_if_all_objects_are_locked();
             }
             else
@@ -326,6 +333,7 @@ public class dragHandlerScript : MonoBehaviour
                 obj.transform.position = AnswerInitialPos;
                 correctAnswerSprite.gameObject.SetActive(false);
                 incorrectAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerAudio.Play();
             }
             return;
         }
@@ -344,6 +352,7 @@ public class dragHandlerScript : MonoBehaviour
                 Plus.gameObject.SetActive(false);
                 correctAnswerSprite.gameObject.SetActive(true);
                 incorrectAnswerSprite.gameObject.SetActive(false);
+                correctAnswerAudio.Play();
                 check_if_all_objects_are_locked();
             }
             else
@@ -351,6 +360,7 @@ public class dragHandlerScript : MonoBehaviour
                 obj.transform.position = PlusInitialPos;
                 correctAnswerSprite.gameObject.SetActive(false);
                 incorrectAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerAudio.Play();
             }
             return;
         }
@@ -368,6 +378,7 @@ public class dragHandlerScript : MonoBehaviour
                 Equal.gameObject.SetActive(false);
                 correctAnswerSprite.gameObject.SetActive(true);
                 incorrectAnswerSprite.gameObject.SetActive(false);
+                correctAnswerAudio.Play();
                 check_if_all_objects_are_locked();
             }
             else
@@ -375,6 +386,7 @@ public class dragHandlerScript : MonoBehaviour
                 obj.transform.position = EqualInitialPos;
                 correctAnswerSprite.gameObject.SetActive(false);
                 incorrectAnswerSprite.gameObject.SetActive(true);
+                incorrectAnswerAudio.Play();
             }
             return;
         }

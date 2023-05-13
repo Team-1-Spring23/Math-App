@@ -12641,6 +12641,8 @@ RectTransform:
   - {fileID: 1763796159}
   - {fileID: 1144715835}
   - {fileID: 707012699}
+  - {fileID: 1167335803}
+  - {fileID: 1436930252}
   m_Father: {fileID: 1237661721}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18638,7 +18640,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 812462816}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24592,7 +24594,7 @@ RectTransform:
   m_Children:
   - {fileID: 1157538820}
   m_Father: {fileID: 812462816}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35109,9 +35111,9 @@ MonoBehaviour:
   answer2Button: {fileID: 1067084676}
   answer3Button: {fileID: 1271068818}
   nextButton: {fileID: 1442029292}
-  ObjectSprite1: {fileID: 21300000, guid: adaac68d8e5d693499597113889d11d3, type: 3}
-  ObjectSprite2: {fileID: 21300000, guid: 9a82544a4e8ea82448062dac5853f931, type: 3}
-  ObjectSprite3: {fileID: 21300000, guid: 97362c8821fe2f7449927570ad6d4d6a, type: 3}
+  ObjectSprite1: {fileID: 21300000, guid: 4aac5e077a0504340af177b570b62f71, type: 3}
+  ObjectSprite2: {fileID: 21300000, guid: 69f1c13e8300e554d856b8592fcd0a6b, type: 3}
+  ObjectSprite3: {fileID: 21300000, guid: 65bcf12eda24ba845ae5fe68f365dae2, type: 3}
   Left1Object: {fileID: 551955555}
   Left2Object: {fileID: 564172231}
   Left3Object: {fileID: 806740921}
