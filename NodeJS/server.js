@@ -62,7 +62,7 @@ app.post('/api/data', (req, res) => {
     });
 });
 
-const port = 3001; // You can use any available port
+const port = process.env.PORT||3001; // You can use any available port
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
