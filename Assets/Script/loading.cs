@@ -16,7 +16,7 @@ public class loading : MonoBehaviour
 
 
     IEnumerator LoadAsyncOperation (int sceneIndex){
-       yield return new WaitForSeconds(3);
+       yield return new WaitForSeconds(1);
         AsyncOperation gameLevel = SceneManager.LoadSceneAsync(sceneIndex);
         loadingPanel.SetActive(true);
         

@@ -28,13 +28,11 @@ public class InputName : MonoBehaviour
     private void nextScreen(string name)
     {
         Debug.Log(name);
-        StartCoroutine(CallAPI(name));
-        SceneManager.LoadScene("Loading_bar");
+        StartCoroutine(CallAPI(name)); // Load scene at end of this coroutine so that it doesn't get interrupted
     }
 
     IEnumerator CallAPI(string name)
     {
-
         // Generate a random number between 1 and 999
         int user_id = Random.Range(1, 10000);
 
@@ -52,6 +50,23 @@ public class InputName : MonoBehaviour
 
         // Create the HttpClient
         HttpClient client = new HttpClient();
+
+        // Send get request
+        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:3001/api/game-data"))
+        {
+            yield return www.SendWebRequest();
+            Debug.Log($"Request status: {www.result}");
+            Debug.Log($"Response code: {www.responseCode}");
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                string responseText = www.downloadHandler.text;
+                Debug.Log(responseText);
+            }
+            else
+            {
+                Debug.Log($"Request failed with status code {www.responseCode}");
+            }
+        }
 
         // Create the HttpRequestMessage and set the content
         HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, apiUrl);
@@ -80,5 +95,8 @@ public class InputName : MonoBehaviour
 
         // Dispose of the HttpClient instance
         client.Dispose();
+
+        // Load next scene
+        SceneManager.LoadScene("Loading_bar");
     }
 }
