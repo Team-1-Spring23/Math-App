@@ -1,13 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class backButton : MonoBehaviour
 {
-   [SerializeField] private string screen_name;
-   public void backButtonFns()
-   {
-    SceneManager.LoadScene(screen_name);
-   }
+    [SerializeField] private string screen_name;
+    private SceneTransitionManager sceneTransitionManager;
+
+    void Start()
+    {
+        sceneTransitionManager = SceneTransitionManager.getInstance();
+    }
+
+    public void backButtonFns()
+    {
+        if (sceneTransitionManager != null)
+        {
+            sceneTransitionManager.loadSceneWithTransition(screen_name);
+        }
+        else
+        {
+            SceneManager.LoadScene(screen_name);
+        }
+    }
+
 }

@@ -5,31 +5,52 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Loading_bar.unity
-    guid: bf89bab6900b2458ca2215fccfb38dd5
   - enabled: 1
     path: Assets/home_screen.unity
     guid: f814f18ce149a40b7a6c5369d99f75ed
   - enabled: 1
-    path: Assets/store_page.unity
-    guid: 8378228d5b2c447da8ed970f71a7d3fa
+    path: Assets/Adding_Quiz.unity
+    guid: 6b2753eec5241264c9c6b3885c3e731c
+  - enabled: 1
+    path: Assets/Addpractice.unity
+    guid: 6df320df37dc7db42b8259b2142ed883
+  - enabled: 1
+    path: Assets/AddPractice_Advanced.unity
+    guid: 6062e4accafc9d74999f9e57128a8541
+  - enabled: 1
+    path: Assets/Beginner_Confetti.unity
+    guid: fa0a2027687efe5478e40ae55ac28858
+  - enabled: 1
+    path: Assets/Confetti.unity
+    guid: 51d1f542c8493b845b201f19b62b0e83
+  - enabled: 1
+    path: Assets/Fun_Confetti.unity
+    guid: 392cf08b3f216bc4291dca91a23b619a
+  - enabled: 1
+    path: Assets/AddPractice_Intermediate.unity
+    guid: 39fea90ad1b512846be5a4e390019a92
+  - enabled: 1
+    path: Assets/InputName.unity
+    guid: f2b29ce93fe7fc1428a1f1f911f336bd
+  - enabled: 1
+    path: Assets/Intermediate_Confetti.unity
+    guid: 70c5f06a527e8d94c81af41fc9e771cb
+  - enabled: 1
+    path: Assets/Loading_bar.unity
+    guid: bf89bab6900b2458ca2215fccfb38dd5
+  - enabled: 1
+    path: Assets/PracticeAdd.unity
+    guid: 365a04e4d84c8154598e9c8567ac6bbf
+  - enabled: 1
+    path: Assets/Quiz_Confetti.unity
+    guid: 7b812862641be6346a184f69376c2ba8
   - enabled: 1
     path: Assets/Random Objects.unity
     guid: c8e0cf9f96bf66e448421916313be9a5
   - enabled: 1
-    path: Assets/puzzle_scene.unity
-    guid: 015c9dd27dfb1d346bf310ff1072e326
+    path: Assets/Advanced_Confetti.unity
+    guid: 39e608200cf5c3c4d9c063d6e3895891
   - enabled: 1
     path: Assets/Adding_puzzle.unity
-    guid: a2778790aae744a93852888f688d8ef8
-  - enabled: 1
-    path: Assets/Adding_Quiz.unity
-    guid: 6b2753eec5241264c9c6b3885c3e731c
-  - enabled: 1
-    path: Assets/Confetti.unity
-    guid: 51d1f542c8493b845b201f19b62b0e83
+    guid: e5c03518bbbd2c2479501ef86b8e7f5c
   m_configObjects: {}

@@ -7,23 +7,29 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class DragDrop : MonoBehaviour
 {
 
     public GameObject Crt_ans;
     public GameObject AnsB;
-    public Text Ans;
-    public Text num1;
-    public Text num2;
+    public TMP_Text Ans;
+    public TMP_Text num1;
+    public TMP_Text num2;
     public Button NextButton;
-    public GameObject Confetti;
+    
 
     private AddingQuiz addingQuiz; // access AddingQuiz functions
 
     public float dropdistance;
 
     public bool islocked;
+
+    private GameObject panelObject;
+
+    static int Count = 0;
 
     Vector2 objectInitPos;
 
@@ -55,17 +61,30 @@ public class DragDrop : MonoBehaviour
             islocked = true;
             AnsB.transform.position = Crt_ans.transform.position; // Correct answer will be fixed in answer panel
             addingQuiz.showResults(true); // show correct answer
+            AnsB.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+            panelObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+            AnsB.gameObject.SetActive(false);
         }
         else
         {
             islocked = false;
             AnsB.transform.position = objectInitPos; // Worng answer will be pulled to it's original position
-            NextButton.gameObject.SetActive(false);
-
+            addingQuiz.showResults(false);
         }
     }
-    public void OriginalPosition()
+
+    public void restartPuzzle()
     {
-        AnsB.transform.position = Input.mousePosition;
+        Count++;
+
+        if (Count == 2)
+        {
+            SceneManager.LoadScene("Quiz_Confetti");
+            Count = 0;
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
