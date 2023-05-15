@@ -17,6 +17,9 @@ const dbconfig = 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:databaseform
 
 app.use(cors());
 app.use(bodyParser.json());
+app.get('/', (req, res) => {
+    res.json({'name':"math app "});
+});
 
 app.get('/api/game-data', (req, res) => {
     sql.connect(dbconfig, (err) => {
