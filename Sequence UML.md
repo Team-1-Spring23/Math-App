@@ -1,5 +1,6 @@
 | Date  | Progress Description |
 | ------------- | ------------- |
+| 05/15/2023 | Finished Sequence UML with all the necessary changes added tools used and prepared a document for the workflow explaining sequence uml and covered all new functionalities like name screen and congratulations screen|
 | 05/08/2023 | Finished Sequence UML with all the necessary changes |
 | 05/01/2023 | Updated sequence uml with necessary changes and also made it according to the new changes |
 | 04/24/2023 | Tested application for any functional errors, and updated functional issues which are resolved and added new errors <br>Updated sequence uml according to new changes<br>Deployed newly created assets wherever needed in unity |
@@ -17,6 +18,12 @@
 
 
 <b>Other Updates</b>
+
+05/15/2023
+
+[Sequence UML.pdf](https://github.com/Team-1-Spring23/Math-App/files/11486061/Sequence.UML.pdf)
+
+![Sequence SVG](https://github.com/Team-1-Spring23/Math-App/assets/124210302/95c4bd77-ace2-4a0c-9327-bf1114b9e1ff)
 
 05/08/2023
 
